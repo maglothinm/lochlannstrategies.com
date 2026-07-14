@@ -1,7 +1,13 @@
-Lochlann Strategies website v3.1
+LOCHLANN STRATEGIES WEBSITE — VERSION 5.0
 
-This revision fixes the broken header images by embedding the approved logo directly in every HTML page. No external header asset path is required.
+GitHub-ready static website package.
 
-It also provides a responsive hamburger menu below 1050px so Home, About, Services, Experience, Sectors, and Contact remain accessible on phones and tablets.
+Version 5.0 changes:
+- Rebuilt homepage around the founder’s complete acquisition and delivery lifecycle
+- Added five-perspective “Why Lochlann” architecture
+- Added representative program portfolio and selected outcomes
+- Added restrained prior-employer references with non-endorsement language
+- Rewrote About and Experience pages
+- Preserved the v3.3 iPhone navigation hitbox correction and existing responsive framework
 
-Upload the contents of this ZIP to the repository root, preserving the assets folder for the social share preview image.
+Deployment: replace the repository contents with the contents of this ZIP, preserving the folder structure.
