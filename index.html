@@ -1,1777 +1,743 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta
-
-    name="viewport"
-
-    content="width=device-width, initial-scale=1.0"
-
-  >
-
-  <meta
-
-    name="description"
-
-    content="Lochlann Strategies provides executive growth strategy, business development, capture leadership, and strategic advisory services."
-
-  >
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lochlann Strategies provides executive growth strategy, business development, capture leadership, strategic partnerships, and advisory support for organizations operating in complex markets.">
   <meta name="theme-color" content="#0A1324">
+  <title>Lochlann Strategies | Strategy. Access. Impact.</title>
 
-  <title>
-
-    Lochlann Strategies | Strategy. Access. Impact.
-
-  </title>
-
-  <link
-
-    id="favicon"
-
-    rel="icon"
-
-    href="assets/lochlann-icon-approved.jpg"
-
-  >
+  <link rel="icon" href="assets/lochlann-icon-approved.jpg">
 
   <style>
-
     :root {
-
-      --midnight: #0A1324;
-
-      --navy: #111D33;
-
+      --navy: #0A1324;
+      --navy-2: #101D33;
+      --navy-3: #162640;
       --gold: #C9A86A;
-
-      --gold-light: #E2C487;
-
       --slate: #5B6472;
-
       --stone: #E7E3DA;
-
-      --pearl: #F5F5F5;
-
+      --pearl: #F5F5F3;
       --white: #FFFFFF;
-
-      --ink: #18202C;
-
-      --maximum-width: 1160px;
-
+      --ink: #17202D;
+      --max: 1180px;
+      --shadow: 0 18px 50px rgba(10, 19, 36, 0.08);
     }
 
     * {
-
       box-sizing: border-box;
-
     }
 
     html {
-
       scroll-behavior: smooth;
-
     }
 
     body {
-
       margin: 0;
-
-      overflow-x: hidden;
-
       background: var(--pearl);
-
       color: var(--ink);
-
-      font-family:
-
-        Montserrat,
-
-        "Avenir Next",
-
-        Avenir,
-
-        Arial,
-
-        sans-serif;
-
+      font-family: Montserrat, "Avenir Next", Avenir, Arial, sans-serif;
       line-height: 1.65;
-
+      overflow-x: hidden;
     }
 
     img {
-
       display: block;
-
       max-width: 100%;
-
     }
 
     a {
-
       color: inherit;
-
     }
 
     .container {
-
-      width: min(
-
-        calc(100% - 40px),
-
-        var(--maximum-width)
-
-      );
-
+      width: min(calc(100% - 40px), var(--max));
       margin: 0 auto;
-
     }
 
     .eyebrow {
-
-      margin: 0 0 14px;
-
+      margin: 0 0 16px;
       color: var(--gold);
-
       font-size: 0.76rem;
-
       font-weight: 800;
-
-      letter-spacing: 0.2em;
-
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-
     }
 
     h1,
-
     h2,
-
     h3 {
-
-      font-family:
-
-        "Trajan Pro",
-
-        "Times New Roman",
-
-        Georgia,
-
-        serif;
-
+      font-family: "Trajan Pro", "Times New Roman", Georgia, serif;
       font-weight: 500;
-
     }
 
     h1 {
-
-      max-width: 940px;
-
-      margin: 0 auto 24px;
-
+      max-width: 980px;
+      margin: 0 auto 26px;
       color: var(--white);
-
-      font-size: clamp(
-
-        2.4rem,
-
-        6vw,
-
-        5.25rem
-
-      );
-
-      line-height: 0.98;
-
-      letter-spacing: 0.025em;
-
+      font-size: clamp(2.7rem, 6.2vw, 5.35rem);
+      line-height: 1;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
-
     }
 
     h2 {
-
       margin: 0 0 20px;
-
-      color: var(--midnight);
-
-      font-size: clamp(
-
-        2rem,
-
-        4vw,
-
-        3.2rem
-
-      );
-
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3.25rem);
       line-height: 1.1;
-
     }
 
     h3 {
-
       margin: 0 0 12px;
-
-      color: var(--midnight);
-
+      color: var(--navy);
       font-size: 1.15rem;
-
-      letter-spacing: 0.025em;
-
+      letter-spacing: 0.02em;
     }
 
     p {
-
       margin: 0 0 18px;
-
     }
 
-    /*
-
-      HEADER
-
-    */
-
-    .site-header {
-
+    header {
       position: absolute;
-
       z-index: 20;
-
-      top: 0;
-
-      right: 0;
-
-      left: 0;
-
-      border-bottom:
-
-        1px solid rgba(255, 255, 255, 0.13);
-
-      background:
-
-        rgba(10, 19, 36, 0.72);
-
-      backdrop-filter: blur(8px);
-
+      inset: 0 0 auto 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+      background: rgba(10, 19, 36, 0.78);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
 
-    .navigation {
-
+    .nav {
       min-height: 84px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 28px;
-
     }
 
     .brand {
-
-      display: block;
-
-      width: 255px;
-
+      display: flex;
+      align-items: center;
+      width: 252px;
+      min-height: 54px;
       overflow: hidden;
-
       text-decoration: none;
-
     }
 
     .brand img {
-
-      width: 250px;
-
-      margin-top: -26px;
-
-      margin-bottom: -25px;
-
+      width: 246px;
+      margin-top: -28px;
+      margin-bottom: -28px;
       mix-blend-mode: screen;
-
     }
 
-    .navigation-links {
-
+    .nav-links {
       display: flex;
-
       align-items: center;
-
       gap: 30px;
-
-      color: rgba(255, 255, 255, 0.9);
-
-      font-size: 0.75rem;
-
-      font-weight: 800;
-
-      letter-spacing: 0.1em;
-
+      color: var(--white);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
       text-transform: uppercase;
-
     }
 
-    .navigation-links a {
-
+    .nav-links a {
       text-decoration: none;
-
+      transition: color 160ms ease;
     }
 
-    .navigation-links a:hover {
-
-      color: var(--gold-light);
-
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--gold);
     }
-
-    /*
-
-      HERO
-
-    */
 
     .hero {
-
       position: relative;
-
       min-height: 760px;
-
       display: grid;
-
       place-items: center;
-
-      overflow: hidden;
-
-      padding: 145px 0 110px;
-
+      padding: 160px 0 112px;
       color: var(--white);
-
       text-align: center;
-
       background:
-
-        radial-gradient(
-
-          circle at 50% 35%,
-
-          rgba(201, 168, 106, 0.11),
-
-          transparent 34%
-
-        ),
-
-        linear-gradient(
-
-          135deg,
-
-          var(--midnight) 0%,
-
-          var(--navy) 100%
-
-        );
-
+        radial-gradient(circle at 50% 34%, rgba(201, 168, 106, 0.14), transparent 34%),
+        linear-gradient(135deg, #0A1324 0%, #101D33 55%, #0A1324 100%);
+      overflow: hidden;
     }
 
     .hero::before {
-
       content: "";
-
       position: absolute;
-
       inset: 0;
-
-      opacity: 0.13;
-
+      opacity: 0.12;
       background-image:
-
-        linear-gradient(
-
-          30deg,
-
-          transparent 48%,
-
-          rgba(201, 168, 106, 0.22) 49%,
-
-          transparent 50%
-
-        ),
-
-        linear-gradient(
-
-          -30deg,
-
-          transparent 48%,
-
-          rgba(201, 168, 106, 0.14) 49%,
-
-          transparent 50%
-
-        );
-
+        linear-gradient(30deg, transparent 48%, rgba(201, 168, 106, 0.24) 49%, transparent 50%),
+        linear-gradient(-30deg, transparent 48%, rgba(201, 168, 106, 0.15) 49%, transparent 50%);
       background-size: 150px 150px;
-
     }
 
-    .hero-content {
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -150px;
+      bottom: -260px;
+      width: 620px;
+      height: 620px;
+      border: 1px solid rgba(201, 168, 106, 0.14);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 70px rgba(201, 168, 106, 0.03),
+        0 0 0 140px rgba(201, 168, 106, 0.02);
+    }
 
+    .hero-inner {
       position: relative;
-
       z-index: 2;
-
-      width: min(
-
-        calc(100% - 36px),
-
-        1000px
-
-      );
-
-    }
-
-    .hero-mark {
-
-      width: 190px;
-
-      margin: 0 auto 18px;
-
-      mix-blend-mode: screen;
-
+      width: min(calc(100% - 36px), 1040px);
     }
 
     .hero-copy {
-
-      max-width: 760px;
-
-      margin: 0 auto 32px;
-
-      color:
-
-        rgba(255, 255, 255, 0.79);
-
-      font-size: clamp(
-
-        1rem,
-
-        1.8vw,
-
-        1.22rem
-
-      );
-
+      max-width: 790px;
+      margin: 0 auto 34px;
+      color: rgba(255, 255, 255, 0.80);
+      font-size: clamp(1rem, 1.8vw, 1.22rem);
     }
 
-    .button-row {
-
+    .actions {
       display: flex;
-
       justify-content: center;
-
       flex-wrap: wrap;
-
       gap: 14px;
-
     }
 
     .button {
-
-      min-height: 50px;
-
       display: inline-flex;
-
       align-items: center;
-
       justify-content: center;
-
+      min-height: 50px;
       padding: 0 24px;
-
       border: 1px solid var(--gold);
-
       background: var(--gold);
-
-      color: var(--midnight);
-
+      color: var(--navy);
       font-size: 0.76rem;
-
       font-weight: 800;
-
       letter-spacing: 0.09em;
-
       text-decoration: none;
-
       text-transform: uppercase;
-
       transition:
-
-        transform 0.2s ease,
-
-        background 0.2s ease;
-
+        transform 160ms ease,
+        background 160ms ease,
+        color 160ms ease;
     }
 
-    .button:hover {
-
-      transform: translateY(-2px);
-
-      background: var(--gold-light);
-
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-1px);
+      background: #D6B97E;
     }
 
     .button.secondary {
-
       background: transparent;
-
       color: var(--white);
-
     }
 
-    /*
+    .button.secondary:hover,
+    .button.secondary:focus-visible {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--gold);
+    }
 
-      GENERAL SECTIONS
+    .credibility-band {
+      position: relative;
+      z-index: 5;
+      margin-top: -1px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: var(--navy-2);
+      color: rgba(255, 255, 255, 0.72);
+    }
 
-    */
+    .credibility-row {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px 34px;
+      flex-wrap: wrap;
+      padding: 18px 0;
+      text-align: center;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .credibility-row span::after {
+      content: "•";
+      margin-left: 34px;
+      color: var(--gold);
+    }
+
+    .credibility-row span:last-child::after {
+      content: "";
+      margin: 0;
+    }
 
     section {
-
       padding: 96px 0;
-
     }
 
-    .gold-rule {
-
-      width: 72px;
-
-      height: 2px;
-
-      margin-top: 28px;
-
-      background: var(--gold);
-
-    }
-
-    /*
-
-      ABOUT
-
-    */
-
-    .introduction-grid {
-
+    .intro-grid {
       display: grid;
-
-      grid-template-columns:
-
-        1fr 1.15fr;
-
-      align-items: start;
-
+      grid-template-columns: 1fr 1.15fr;
       gap: 72px;
-
+      align-items: start;
     }
 
-    .positioning-panel {
+    .rule {
+      width: 72px;
+      height: 2px;
+      margin-top: 28px;
+      background: var(--gold);
+    }
 
+    .panel {
       padding: 42px;
-
-      border-left:
-
-        3px solid var(--gold);
-
+      border-left: 3px solid var(--gold);
       background: var(--white);
-
-      box-shadow:
-
-        0 16px 45px
-
-        rgba(10, 19, 36, 0.07);
-
+      box-shadow: var(--shadow);
     }
 
     .lead {
-
       color: #3F4854;
-
       font-size: 1.1rem;
-
     }
-
-    /*
-
-      SERVICES
-
-    */
 
     .services {
-
       background: var(--white);
-
     }
 
-    .section-heading {
-
-      max-width: 760px;
-
+    .section-head {
+      max-width: 790px;
       margin-bottom: 48px;
-
     }
 
-    .service-cards {
-
+    .cards {
       display: grid;
-
-      grid-template-columns:
-
-        repeat(3, minmax(0, 1fr));
-
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
-
     }
 
-    .service-card {
-
-      min-height: 290px;
-
+    .card {
+      min-height: 300px;
       padding: 32px;
-
-      border:
-
-        1px solid #DDD8CE;
-
+      border: 1px solid #DDD8CE;
       background: var(--pearl);
-
       transition:
-
-        transform 0.2s ease,
-
-        border-color 0.2s ease,
-
-        box-shadow 0.2s ease;
-
+        transform 160ms ease,
+        box-shadow 160ms ease;
     }
 
-    .service-card:hover {
-
-      transform: translateY(-4px);
-
-      border-color: var(--gold);
-
-      box-shadow:
-
-        0 16px 42px
-
-        rgba(10, 19, 36, 0.08);
-
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
     }
 
-    .service-number {
-
+    .number {
       margin-bottom: 38px;
-
       color: var(--gold);
-
-      font-family:
-
-        Georgia,
-
-        serif;
-
+      font-family: Georgia, serif;
       font-size: 1.9rem;
-
     }
 
-    .service-card p {
-
+    .card p {
       color: #59616C;
-
     }
-
-    /*
-
-      EXPERIENCE
-
-    */
 
     .experience {
-
       color: var(--white);
-
-      background: var(--midnight);
-
+      background: var(--navy);
     }
 
     .experience h2 {
-
       color: var(--white);
-
     }
 
     .experience-grid {
-
       display: grid;
-
-      grid-template-columns:
-
-        0.9fr 1.35fr;
-
-      align-items: start;
-
+      grid-template-columns: 0.9fr 1.35fr;
       gap: 70px;
-
+      align-items: start;
     }
 
     .experience-copy {
-
-      color:
-
-        rgba(255, 255, 255, 0.72);
-
+      color: rgba(255, 255, 255, 0.72);
     }
 
-    .credential-grid {
-
+    .credentials {
       display: grid;
-
-      grid-template-columns:
-
-        1fr 1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 1px;
-
-      background:
-
-        rgba(255, 255, 255, 0.13);
-
+      background: rgba(255, 255, 255, 0.13);
     }
 
     .credential {
-
-      min-height: 170px;
-
+      min-height: 180px;
       padding: 28px;
-
-      background: var(--navy);
-
+      background: var(--navy-2);
     }
 
     .credential strong {
-
       display: block;
-
       margin-bottom: 9px;
-
-      color: var(--gold-light);
-
-      font-family:
-
-        Georgia,
-
-        serif;
-
+      color: var(--gold);
+      font-family: Georgia, serif;
       font-size: 1.08rem;
-
     }
 
     .credential span {
-
-      color:
-
-        rgba(255, 255, 255, 0.68);
-
+      color: rgba(255, 255, 255, 0.68);
       font-size: 0.92rem;
-
     }
 
-    /*
-
-      SECTORS
-
-    */
-
     .sectors {
-
       text-align: center;
-
     }
 
     .sector-list {
-
       display: flex;
-
-      justify-content: center;
-
       flex-wrap: wrap;
-
+      justify-content: center;
       gap: 12px;
-
       margin-top: 34px;
-
     }
 
     .sector {
-
       padding: 11px 16px;
-
-      border:
-
-        1px solid #D8D3CA;
-
+      border: 1px solid #D8D3CA;
       background: var(--white);
-
       color: var(--navy);
-
       font-size: 0.72rem;
-
       font-weight: 800;
-
       letter-spacing: 0.08em;
-
       text-transform: uppercase;
-
     }
 
-    /*
-
-      CONTACT
-
-    */
-
     .contact {
-
       padding: 82px 0;
-
       color: var(--white);
-
-      background:
-
-        linear-gradient(
-
-          135deg,
-
-          var(--navy),
-
-          var(--midnight)
-
-        );
-
+      background: linear-gradient(135deg, var(--navy-2), var(--navy));
     }
 
     .contact h2 {
-
       color: var(--white);
-
     }
 
     .contact-grid {
-
       display: grid;
-
-      grid-template-columns:
-
-        1.25fr 0.75fr;
-
-      align-items: center;
-
+      grid-template-columns: 1.25fr 0.75fr;
       gap: 48px;
-
+      align-items: center;
     }
 
     .contact p {
-
-      color:
-
-        rgba(255, 255, 255, 0.72);
-
+      color: rgba(255, 255, 255, 0.72);
     }
 
     .contact-actions {
-
       display: flex;
-
       flex-direction: column;
-
       align-items: flex-end;
-
       gap: 14px;
-
     }
 
     .contact-link {
-
-      color: var(--gold-light);
-
+      color: var(--gold);
       font-size: 0.88rem;
-
       text-decoration: none;
-
     }
 
-    /*
-
-      FOOTER
-
-    */
-
     footer {
-
       padding: 28px 0;
-
       background: #070D18;
-
-      color:
-
-        rgba(255, 255, 255, 0.48);
-
+      color: rgba(255, 255, 255, 0.48);
       font-size: 0.72rem;
-
     }
 
     .footer-row {
-
       display: flex;
-
       justify-content: space-between;
-
       gap: 20px;
-
     }
 
-    /*
-
-      TABLET
-
-    */
-
     @media (max-width: 860px) {
-
-      .navigation-links {
-
+      .nav-links {
         display: none;
-
       }
 
       .hero {
-
-        min-height: 690px;
-
-        padding-top: 125px;
-
+        min-height: 700px;
+        padding-top: 135px;
       }
 
-      .introduction-grid,
-
+      .intro-grid,
       .experience-grid,
-
       .contact-grid {
-
         grid-template-columns: 1fr;
-
         gap: 40px;
-
       }
 
-      .service-cards {
-
+      .cards {
         grid-template-columns: 1fr;
-
       }
 
-      .credential-grid {
-
+      .credentials {
         grid-template-columns: 1fr;
-
       }
 
       .contact-actions {
-
         align-items: flex-start;
-
       }
 
+      .credibility-row span::after {
+        display: none;
+      }
     }
 
-    /*
-
-      MOBILE
-
-    */
-
     @media (max-width: 560px) {
-
       .container {
-
-        width: min(
-
-          calc(100% - 28px),
-
-          var(--maximum-width)
-
-        );
-
+        width: min(calc(100% - 28px), var(--max));
       }
 
       .brand {
-
-        width: 215px;
-
+        width: 220px;
       }
 
       .brand img {
-
-        width: 210px;
-
+        width: 215px;
       }
 
       .hero {
-
         min-height: 650px;
-
-      }
-
-      .hero-mark {
-
-        width: 150px;
-
+        padding-bottom: 88px;
       }
 
       h1 {
-
-        font-size: clamp(
-
-          2rem,
-
-          11vw,
-
-          3.15rem
-
-        );
-
-        line-height: 1.02;
-
+        font-size: clamp(2.05rem, 12vw, 3.2rem);
+        line-height: 1.03;
       }
 
       section {
-
         padding: 72px 0;
-
       }
 
-      .positioning-panel,
-
-      .service-card {
-
+      .panel,
+      .card {
         padding: 27px;
-
       }
 
       .footer-row {
-
         flex-direction: column;
-
       }
-
     }
-
   </style>
-
 </head>
 
 <body>
-
-  <header class="site-header">
-
-    <div class="container navigation">
-
-      <a
-
-        class="brand"
-
-        href="#top"
-
-        aria-label="Lochlann Strategies home"
-
-      >
-
-        <img
-
-          src="assets/lochlann-lockup-approved.jpg"
-
-          data-jpg="assets/lochlann-lockup-approved.jpg"
-
-          data-jpeg="assets/lochlann-lockup-approved.jpeg"
-
-          alt="Lochlann Strategies"
-
-          onerror="tryAlternateExtension(this)"
-
-        >
-
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Lochlann Strategies home">
+        <img src="assets/lochlann-lockup-approved.jpg" alt="Lochlann Strategies">
       </a>
 
-      <nav
-
-        class="navigation-links"
-
-        aria-label="Primary navigation"
-
-      >
-
-        <a href="#about">
-
-          About
-
-        </a>
-
-        <a href="#services">
-
-          Services
-
-        </a>
-
-        <a href="#experience">
-
-          Experience
-
-        </a>
-
-        <a href="#contact">
-
-          Contact
-
-        </a>
-
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#sectors">Sectors</a>
+        <a href="#contact">Contact</a>
       </nav>
-
     </div>
-
   </header>
 
   <main id="top">
-
     <section class="hero">
-
-      <div class="hero-content">
-
-        <img
-
-          class="hero-mark"
-
-          src="assets/lochlann-mark-approved.jpg"
-
-          data-jpg="assets/lochlann-mark-approved.jpg"
-
-          data-jpeg="assets/lochlann-mark-approved.jpeg"
-
-          alt="Lochlann Strategies tower and waves mark"
-
-          onerror="tryAlternateExtension(this)"
-
-        >
-
-        <p class="eyebrow">
-
-          Strategy · Access · Impact
-
-        </p>
+      <div class="hero-inner">
+        <p class="eyebrow">Strategy · Access · Impact</p>
 
         <h1>
-
-          Navigate Complexity.
-
-          <br>
-
+          Navigate Complexity.<br>
           Unlock Opportunity.
-
         </h1>
 
         <p class="hero-copy">
-
-          Executive growth strategy, business development,
-
-          capture leadership, and strategic advisory for
-
-          organizations operating in complex markets.
-
+          Executive growth strategy, business development, capture leadership, strategic partnerships, and advisory support for organizations operating in complex markets.
         </p>
 
-        <div class="button-row">
-
-          <a
-
-            class="button"
-
-            href="#contact"
-
-          >
-
-            Start a Conversation
-
-          </a>
-
-          <a
-
-            class="button secondary"
-
-            href="#services"
-
-          >
-
-            Explore Services
-
-          </a>
-
+        <div class="actions">
+          <a class="button" href="#contact">Start a Conversation</a>
+          <a class="button secondary" href="#services">Explore Services</a>
         </div>
-
       </div>
-
     </section>
+
+    <div class="credibility-band" aria-label="Areas of experience">
+      <div class="container credibility-row">
+        <span>Growth Strategy</span>
+        <span>Business Development</span>
+        <span>Capture Leadership</span>
+        <span>Strategic Partnerships</span>
+        <span>Executive Advisory</span>
+      </div>
+    </div>
 
     <section id="about">
-
-      <div class="container introduction-grid">
-
+      <div class="container intro-grid">
         <div>
-
-          <p class="eyebrow">
-
-            Lochlann Strategies
-
-          </p>
-
-          <h2>
-
-            Senior-level counsel where growth,
-
-            security, and execution intersect.
-
-          </h2>
-
-          <div class="gold-rule"></div>
-
+          <p class="eyebrow">Lochlann Strategies</p>
+          <h2>Senior-level counsel where growth, security, and execution intersect.</h2>
+          <div class="rule"></div>
         </div>
 
-        <div class="positioning-panel">
-
+        <div class="panel">
           <p class="lead">
-
-            Lochlann Strategies helps leadership teams
-
-            shape opportunities, build credible market
-
-            positions, assemble effective partnerships,
-
-            and convert complex pursuits into practical
-
-            action.
-
+            Lochlann Strategies helps leadership teams shape opportunities, build credible market positions, assemble effective partnerships, and convert complex pursuits into practical action.
           </p>
 
           <p>
-
-            Recommendations are grounded in customer
-
-            realities, competitive dynamics,
-
-            organizational capability, and the
-
-            discipline required to deliver.
-
+            Recommendations are grounded in customer realities, competitive dynamics, organizational capability, and the discipline required to deliver.
           </p>
-
         </div>
-
       </div>
-
     </section>
 
-    <section
-
-      class="services"
-
-      id="services"
-
-    >
-
+    <section class="services" id="services">
       <div class="container">
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-
-            Core Services
-
-          </p>
-
-          <h2>
-
-            Focused support for consequential
-
-            growth decisions.
-
-          </h2>
-
+        <div class="section-head">
+          <p class="eyebrow">Core Services</p>
+          <h2>Focused support for consequential growth decisions.</h2>
           <p>
-
-            Engagements can be structured as targeted
-
-            advisory work, fractional executive support,
-
-            or hands-on pursuit leadership.
-
+            Engagements can be structured as targeted advisory work, fractional executive support, or hands-on pursuit leadership.
           </p>
-
         </div>
 
-        <div class="service-cards">
-
-          <article class="service-card">
-
-            <div class="service-number">
-
-              01
-
-            </div>
-
-            <h3>
-
-              Growth Strategy
-
-            </h3>
-
+        <div class="cards">
+          <article class="card">
+            <div class="number">01</div>
+            <h3>Growth Strategy</h3>
             <p>
-
-              Market assessment, account strategy,
-
-              opportunity shaping, go-to-market
-
-              planning, and executive decision support.
-
+              Market assessment, account strategy, opportunity shaping, go-to-market planning, and executive decision support.
             </p>
-
           </article>
 
-          <article class="service-card">
-
-            <div class="service-number">
-
-              02
-
-            </div>
-
-            <h3>
-
-              Business Development &amp; Capture
-
-            </h3>
-
+          <article class="card">
+            <div class="number">02</div>
+            <h3>Business Development &amp; Capture</h3>
             <p>
-
-              Pipeline development, capture planning,
-
-              customer engagement, competitive
-
-              positioning, teaming, and pursuit
-
-              governance.
-
+              Pipeline development, capture planning, customer engagement, competitive positioning, teaming, and pursuit governance.
             </p>
-
           </article>
 
-          <article class="service-card">
-
-            <div class="service-number">
-
-              03
-
-            </div>
-
-            <h3>
-
-              Executive Advisory
-
-            </h3>
-
+          <article class="card">
+            <div class="number">03</div>
+            <h3>Executive Advisory</h3>
             <p>
-
-              Independent counsel for leadership teams
-
-              navigating transformation, market entry,
-
-              partnerships, and high-stakes strategic
-
-              choices.
-
+              Independent counsel for leadership teams navigating transformation, market entry, partnerships, and high-stakes strategic choices.
             </p>
-
           </article>
-
         </div>
-
       </div>
-
     </section>
 
-    <section
-
-      class="experience"
-
-      id="experience"
-
-    >
-
+    <section class="experience" id="experience">
       <div class="container experience-grid">
-
         <div>
-
-          <p class="eyebrow">
-
-            Built on Experience
-
-          </p>
-
-          <h2>
-
-            Credibility developed in demanding
-
-            environments.
-
-          </h2>
-
+          <p class="eyebrow">Built on Experience</p>
+          <h2>Credibility developed in demanding environments.</h2>
           <p class="experience-copy">
-
-            Senior leadership experience across national
-
-            security, physical and electronic security,
-
-            international programs, technology,
-
-            infrastructure, and complex government
-
-            contracting.
-
+            Senior leadership experience across national security, physical and electronic security, international programs, technology, infrastructure, and complex government contracting.
           </p>
-
         </div>
 
-        <div class="credential-grid">
-
+        <div class="credentials">
           <div class="credential">
-
-            <strong>
-
-              Complex Pursuits
-
-            </strong>
-
+            <strong>Complex Pursuits</strong>
             <span>
-
-              Leadership across large, multi-party
-
-              opportunities requiring formal capture
-
-              discipline and executive alignment.
-
+              Leadership across large, multi-party opportunities requiring formal capture discipline and executive alignment.
             </span>
-
           </div>
 
           <div class="credential">
-
-            <strong>
-
-              Prime Integration
-
-            </strong>
-
+            <strong>Prime Integration</strong>
             <span>
-
-              Building and directing partner ecosystems,
-
-              teaming structures, due diligence,
-
-              approvals, and pursuit organizations.
-
+              Building and directing partner ecosystems, teaming structures, due diligence, approvals, and pursuit organizations.
             </span>
-
           </div>
 
           <div class="credential">
-
-            <strong>
-
-              Executive Access
-
-            </strong>
-
+            <strong>Executive Access</strong>
             <span>
-
-              Experience engaging senior government,
-
-              security, customs, infrastructure, and
-
-              corporate decision-makers.
-
+              Experience engaging senior government, security, customs, infrastructure, and corporate decision-makers.
             </span>
-
           </div>
 
           <div class="credential">
-
-            <strong>
-
-              Program Reality
-
-            </strong>
-
+            <strong>Program Reality</strong>
             <span>
-
-              Advice informed by delivery experience,
-
-              operational risk, customer expectations,
-
-              and measurable outcomes.
-
+              Advice informed by delivery experience, operational risk, customer expectations, and measurable outcomes.
             </span>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
 
-    <section class="sectors">
-
+    <section class="sectors" id="sectors">
       <div class="container">
-
-        <p class="eyebrow">
-
-          Markets &amp; Sectors
-
-        </p>
-
-        <h2>
-
-          Broad enough to connect markets.
-
-          Focused enough to be useful.
-
-        </h2>
+        <p class="eyebrow">Markets &amp; Sectors</p>
+        <h2>Broad enough to connect markets. Focused enough to be useful.</h2>
 
         <div class="sector-list">
-
-          <span class="sector">
-
-            Aerospace &amp; Defense
-
-          </span>
-
-          <span class="sector">
-
-            National Security
-
-          </span>
-
-          <span class="sector">
-
-            Critical Infrastructure
-
-          </span>
-
-          <span class="sector">
-
-            MedTech &amp; HealthTech
-
-          </span>
-
-          <span class="sector">
-
-            Enterprise Software
-
-          </span>
-
-          <span class="sector">
-
-            International Programs
-
-          </span>
-
-          <span class="sector">
-
-            Government Contracting
-
-          </span>
-
+          <span class="sector">Aerospace &amp; Defense</span>
+          <span class="sector">National Security</span>
+          <span class="sector">Critical Infrastructure</span>
+          <span class="sector">MedTech &amp; HealthTech</span>
+          <span class="sector">Enterprise Software</span>
+          <span class="sector">International Programs</span>
+          <span class="sector">Government Contracting</span>
         </div>
-
       </div>
-
     </section>
 
-    <section
-
-      class="contact"
-
-      id="contact"
-
-    >
-
+    <section class="contact" id="contact">
       <div class="container contact-grid">
-
         <div>
-
-          <p class="eyebrow">
-
-            Contact
-
-          </p>
-
-          <h2>
-
-            Turn strategic intent into
-
-            disciplined action.
-
-          </h2>
-
+          <p class="eyebrow">Contact</p>
+          <h2>Turn strategic intent into disciplined action.</h2>
           <p>
-
-            Discuss an opportunity, a growth challenge,
-
-            or a need for experienced executive support.
-
+            Discuss an opportunity, a growth challenge, or a need for experienced executive support.
           </p>
-
         </div>
 
         <div class="contact-actions">
-
-          <a
-
-            class="button"
-
-            href="mailto:michael@lochlannstrategies.com"
-
-          >
-
+          <a class="button" href="mailto:michael@lochlannstrategies.com">
             Contact Lochlann Strategies
-
           </a>
 
-          <a
-
-            class="contact-link"
-
-            href="https://lochlannstrategies.com"
-
-          >
-
+          <a class="contact-link" href="https://lochlannstrategies.com">
             LochlannStrategies.com
-
           </a>
-
         </div>
-
       </div>
-
     </section>
-
   </main>
 
   <footer>
-
     <div class="container footer-row">
-
-      <span>
-
-        © 2026 Lochlann Strategies.
-
-        All rights reserved.
-
-      </span>
-
-      <span>
-
-        Boston, Massachusetts
-
-      </span>
-
+      <span>© 2026 Lochlann Strategies. All rights reserved.</span>
+      <span>Boston, Massachusetts</span>
     </div>
-
   </footer>
-
-  <script>
-
-    function tryAlternateExtension(image) {
-
-      const jpg = image.dataset.jpg;
-
-      const jpeg = image.dataset.jpeg;
-
-      if (
-
-        image.src.endsWith(".jpg") &&
-
-        jpeg
-
-      ) {
-
-        image.onerror = null;
-
-        image.src = jpeg;
-
-        return;
-
-      }
-
-      if (
-
-        image.src.endsWith(".jpeg") &&
-
-        jpg
-
-      ) {
-
-        image.onerror = null;
-
-        image.src = jpg;
-
-      }
-
-    }
-
-    const favicon =
-
-      document.getElementById("favicon");
-
-    if (favicon) {
-
-      const testImage = new Image();
-
-      testImage.onerror = function () {
-
-        favicon.href =
-
-          "assets/lochlann-icon-approved.jpeg";
-
-      };
-
-      testImage.src =
-
-        "assets/lochlann-icon-approved.jpg";
-
-    }
-
-  </script>
-
 </body>
-
 </html>
