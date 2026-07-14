@@ -1,15 +1,23 @@
-LOCHLANN STRATEGIES — GITHUB PAGES PACKAGE
+LOCHLANN STRATEGIES — GITHUB PAGES DEPLOYMENT
 
-Upload all six HTML files to the same repository folder:
-- index.html
-- about.html
-- services.html
-- experience.html
-- sectors.html
-- contact.html
+Upload every file in this package to the same repository folder:
+index.html
+about.html
+services.html
+experience.html
+sectors.html
+contact.html
+404.html
+.nojekyll
 
-For a user/organization GitHub Pages site, place them in the repository root.
-For a project site, place them together in the selected Pages publishing folder.
+Recommended method:
+1. Open the repository in GitHub.
+2. Choose Add file > Upload files.
+3. Upload all files together in one commit.
+4. Replace existing files when prompted.
+5. Do not edit and commit each page separately from multiple open tabs.
 
-Do not upload only index.html. The navigation requires the other five files.
-The crest and wordmark are embedded directly in each HTML file, so no assets folder is required.
+All branding images are embedded directly into the HTML. No assets folder is required.
+
+
+v3 update: corrected brand assets, social preview metadata, and responsive mobile navigation.
