@@ -1,23 +1,7 @@
-LOCHLANN STRATEGIES — GITHUB PAGES DEPLOYMENT
+Lochlann Strategies website v3.1
 
-Upload every file in this package to the same repository folder:
-index.html
-about.html
-services.html
-experience.html
-sectors.html
-contact.html
-404.html
-.nojekyll
+This revision fixes the broken header images by embedding the approved logo directly in every HTML page. No external header asset path is required.
 
-Recommended method:
-1. Open the repository in GitHub.
-2. Choose Add file > Upload files.
-3. Upload all files together in one commit.
-4. Replace existing files when prompted.
-5. Do not edit and commit each page separately from multiple open tabs.
+It also provides a responsive hamburger menu below 1050px so Home, About, Services, Experience, Sectors, and Contact remain accessible on phones and tablets.
 
-All branding images are embedded directly into the HTML. No assets folder is required.
-
-
-v3 update: corrected brand assets, social preview metadata, and responsive mobile navigation.
+Upload the contents of this ZIP to the repository root, preserving the assets folder for the social share preview image.
