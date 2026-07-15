@@ -69,3 +69,5 @@
 .hero-inner{
   margin:0 auto;
 }
+
+.footer-legal{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;line-height:1.5;color:rgba(255,255,255,.68);}
