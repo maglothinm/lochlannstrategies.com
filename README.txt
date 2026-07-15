@@ -18,3 +18,11 @@ V6.0 SEO RELEASE
 - Preserves existing design, images, navigation, and iPhone menu fix.
 - Adds revised page titles and descriptions, canonical URLs, Open Graph/Twitter metadata, Organization/ProfessionalService structured data, robots.txt, and sitemap.xml.
 - Submit https://lochlannstrategies.com/sitemap.xml in Google Search Console after publishing.
+
+
+V6.1 SEO FIX
+- Corrected duplicate LLC text on Contact page.
+- Expanded Services with six search-focused capability sections and FAQs.
+- Expanded Sectors with substantive sector-specific content.
+- Preserved approved visual design, assets, mobile menu, footer, and social preview.
+- Confirmed robots.txt, sitemap.xml, canonicals, metadata, and JSON-LD remain included.
