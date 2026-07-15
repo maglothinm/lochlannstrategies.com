@@ -1,12 +1,15 @@
-LOCHLANN STRATEGIES v10.2 — HOMEPAGE AND MOBILE MENU FIX
+LOCHLANN STRATEGIES WEBSITE — VERSION 11.0
 
-Replace the existing repository-root contents with every file and folder in this package.
+Release focus:
+- Full marketing architecture rewrite
+- Reduced homepage duplication and length
+- Added sanitized representative operating experience
+- Added ideal-client qualification
+- Made engagement structures tangible
+- Reframed Experience around five executive perspectives
+- Strengthened contact conversion and confidentiality language
+- Expanded SEO metadata, canonical URLs, Open Graph, Twitter cards, and ProfessionalService structured data
+- Preserved animated mobile navigation
 
-Changes:
-- Rebuilt index.html with both linked and embedded stylesheet protection.
-- Restored an animated three-line hamburger that transitions to an X.
-- Applied the menu control consistently across every page.
-- Added close-on-selection, Escape-key, and responsive reset behavior.
-- Preserved the v10 executive positioning and page content.
-
-After deployment, refresh Safari once or close and reopen the tab to clear the previously cached homepage document.
+Deployment:
+Upload all files and folders to the repository root, replacing the previous version.
