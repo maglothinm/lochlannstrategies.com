@@ -1,7 +1,12 @@
-LOCHLANN STRATEGIES — v10.1 MOBILE CSS FIX
+LOCHLANN STRATEGIES v10.2 — HOMEPAGE AND MOBILE MENU FIX
 
-Upload the CONTENTS of this folder to the repository root.
+Replace the existing repository-root contents with every file and folder in this package.
 
-This release embeds the complete stylesheet and navigation script in every HTML page so Experience and Contact cannot render unstyled if an asset path is missed or cached incorrectly. The external assets remain included for compatibility.
+Changes:
+- Rebuilt index.html with both linked and embedded stylesheet protection.
+- Restored an animated three-line hamburger that transitions to an X.
+- Applied the menu control consistently across every page.
+- Added close-on-selection, Escape-key, and responsive reset behavior.
+- Preserved the v10 executive positioning and page content.
 
-Also includes explicit logo dimensions and removes redundant location boilerplate from Contact.
+After deployment, refresh Safari once or close and reopen the tab to clear the previously cached homepage document.
