@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" fill="none">
+  <rect x="1" y="1" width="718" height="818" rx="34" fill="#DCE3E1" stroke="#294052" stroke-opacity=".12" stroke-width="2"/>
+  <circle cx="360" cy="290" r="176" fill="#EAE6DB"/>
+  <circle cx="360" cy="290" r="142" stroke="#B28B50" stroke-opacity=".62" stroke-width="2"/>
+  <circle cx="360" cy="290" r="106" fill="#24384A"/>
+  <text x="360" y="314" fill="#F0E9DB" font-family="Georgia,serif" font-size="72" text-anchor="middle" letter-spacing="7">MM</text>
+  <path d="M136 548C226 496 303 516 360 566C419 618 502 620 584 558" stroke="#B28B50" stroke-width="3" stroke-linecap="round"/>
+  <path d="M136 580C226 528 303 548 360 598C419 650 502 652 584 590" stroke="#B28B50" stroke-opacity=".48" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#294052"><circle cx="136" cy="548" r="7"/><circle cx="360" cy="566" r="7"/><circle cx="584" cy="558" r="7"/></g>
+  <text x="360" y="704" fill="#294052" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="4">FIVE OPERATING PERSPECTIVES</text>
+  <text x="360" y="744" fill="#5D6A70" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">Customer · Capture · Integrator · Operator · Founder</text>
+</svg>
