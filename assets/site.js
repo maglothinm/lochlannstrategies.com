@@ -1,74 +1,35 @@
 /* =============================================================================
-   LOCHLANN STRATEGIES — SHARED SITE BEHAVIOR
+   LOCHLANN STRATEGIES — MINIMAL INTERACTION SCRIPT
+   Version 13.0
 
-   Progressive enhancement only:
-   - sticky-header scrolled state
-   - restrained reveal motion
-   - copy-email control
-
-   Navigation and all content remain usable without JavaScript.
+   The site remains fully usable without JavaScript.
    ============================================================================= */
 
-"use strict";
+(() => {
+  "use strict";
 
-document.documentElement.classList.add("has-js");
+  const header = document.querySelector("[data-site-header]");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-const siteHeader = document.querySelector("[data-site-header]");
+  const updateHeader = () => {
+    if (!header) return;
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
+  };
 
-function updateHeaderState() {
-  if (!siteHeader) {
-    return;
-  }
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
 
-  siteHeader.dataset.scrolled = window.scrollY > 12 ? "true" : "false";
-}
-
-updateHeaderState();
-window.addEventListener("scroll", updateHeaderState, { passive: true });
-
-const revealItems = document.querySelectorAll(".reveal");
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (revealItems.length && "IntersectionObserver" in window && !reducedMotion) {
-  const observer = new IntersectionObserver(
-    (entries, revealObserver) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        }
-
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.removeAttribute("open");
       });
-    },
-    { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
-  );
+    });
 
-  revealItems.forEach((item) => observer.observe(item));
-} else {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
-}
-
-const copyEmailButton = document.querySelector("[data-copy-email]");
-
-if (copyEmailButton) {
-  const email = copyEmailButton.dataset.copyEmail;
-  const defaultLabel = copyEmailButton.getAttribute("aria-label") || "Copy email address";
-
-  copyEmailButton.addEventListener("click", async () => {
-    if (!email) {
-      return;
-    }
-
-    try {
-      await navigator.clipboard.writeText(email);
-      copyEmailButton.setAttribute("aria-label", "Email address copied");
-
-      window.setTimeout(() => {
-        copyEmailButton.setAttribute("aria-label", defaultLabel);
-      }, 1800);
-    } catch (error) {
-      window.location.href = `mailto:${email}`;
-    }
-  });
-}
+    document.addEventListener("click", (event) => {
+      if (mobileMenu.open && !mobileMenu.contains(event.target)) {
+        mobileMenu.removeAttribute("open");
+      }
+    });
+  }
+})();
