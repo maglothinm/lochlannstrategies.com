@@ -1,14 +1,15 @@
-# Lochlann Strategies Website — Version 12.0
+# Lochlann Strategies Website — Version 12.1
 
 This package contains a static, deployment-ready website for Lochlann Strategies.
 
 ## Release focus
 
-- Reworked the visual system around a quieter, more continuous palette.
-- Replaced hard navy-to-white section changes with layered ink, slate, muted blue, mist, stone, warm ivory, and paper surfaces.
-- Confined the darkest treatments primarily to the hero, contained contact panels, calls to action, and footer.
-- Added a visual operating lifecycle, decision cards, engagement structures, an experience timeline, and restrained SVG linework.
-- Standardized the header, navigation, contact pathway, and footer across all pages.
+- Removed the decorative infographic layer that made the prior release feel repetitive.
+- Eliminated the custom lifecycle diagram, contour backgrounds, strategic grid, placeholder founder monogram, and nonfunctional consulting icons.
+- Rebuilt the visual hierarchy around typography, spacing, rules, restrained surfaces, and editorial composition.
+- Retained a softer palette of ink, slate, muted blue-gray, stone, and warm ivory to avoid abrupt navy-to-white transitions.
+- Replaced the duplicate homepage lifecycle graphics with one text-led decision-standard panel.
+- Simplified cards into flat editorial sections without circular ornaments, large rounded corners, or shadows.
 - Preserved semantic, human-reviewable source code with clear section comments and centralized design tokens.
 - Kept JavaScript optional and limited to progressive enhancement.
 
@@ -23,10 +24,7 @@ This package contains a static, deployment-ready website for Lochlann Strategies
 - `404.html` — Not-found page
 - `assets/site.css` — Shared design system and responsive rules
 - `assets/site.js` — Progressive enhancement only
-- `assets/icons.svg` — Shared SVG symbol library
-- `assets/strategic-grid.svg` — Hero linework
-- `assets/contours.svg` — Subtle section texture
-- `assets/founder-perspective.svg` — About-page visual
+- `assets/icons.svg` — Functional arrow, mail, and copy icons only
 - `assets/favicon.png` — Brand mark
 - `assets/lochlann-share-preview.jpg` — Social sharing image
 - `robots.txt` and `sitemap.xml` — Search-engine support
