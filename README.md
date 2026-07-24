@@ -1,20 +1,16 @@
-# Lochlann Strategies Website — Version 14.1
+# Lochlann Strategies — Version 14.2 Brand Polish
 
-This release retains the cache-safe, mobile-tested structure of Version 14.0 and restores the darker Lochlann brand presence.
+Version 14.2 preserves the Version 14.1 structure, copy, navigation, responsive system, and dark editorial character. It refines only the brand presentation.
 
-## Brand direction
+## Changes
 
-- Predominantly navy and slate rather than white or light page fields.
-- Dark-to-dark transitions between sections to avoid harsh navy-to-white shifts.
-- Warm ivory reserved for typography and selected controls.
-- Brass reserved for rules, labels, and primary calls to action.
-- No diagrams, arrows, stock icons, decorative line art, or consulting-infographic devices.
+- Consolidated the site into three principal dark surfaces: deep ink, executive navy, and muted slate.
+- Added soft tonal transitions instead of repeated hard section borders.
+- Reduced repeated brass-edged panel treatments.
+- Reserved brass primarily for action, selected states, and page signatures.
+- Added one low-opacity crest watermark to the desktop homepage hero only.
+- Improved brand-lockup clarity and mobile descriptor legibility.
+- Added a restrained 150 ms initial hero entrance with reduced-motion support.
+- Retained all Version 14.1 mobile and overflow safeguards.
 
-## Deployment
-
-Upload all files and folders to the repository root in one release. The pages reference uniquely versioned assets:
-
-- `assets/lochlann-v14.1.css`
-- `assets/lochlann-v14.1.js`
-
-These filenames prevent Safari or GitHub Pages from pairing this HTML with an older stylesheet.
+Deploy all files together so the cache-versioned Version 14.2 assets are published with the HTML.

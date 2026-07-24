@@ -1,11 +1,19 @@
-# Professional Review Notes — Version 14.1
+# Version 14.2 Review Notes
 
-## Marketing and brand assessment
+## Design position
 
-Version 14.0 solved the responsive failure but overcorrected toward a light editorial theme. That reduced the visual equity established by Lochlann's navy-and-brass identity and made the site feel more like a general professional-services publication than a selective executive advisory firm.
+This is a visual-polish release, not a redesign. The Version 14.1 information architecture, wording, responsive grids, navigation, and component structure remain intact.
 
-Version 14.1 keeps the successful structure, typography, spacing, and mobile behavior while restoring a dominant navy field. Visual variation now comes from subtle changes among ink, slate, muted blue-gray, and contained brass accents—not from alternating white and navy blocks.
+## Brand controls
 
-## Web-engineering standard
+- No diagrams, arrows, stock illustrations, icon systems, maps, or repeating patterns.
+- The Lochlann crest is the only decorative graphic and appears once as a subtle desktop-only watermark.
+- Brass is deliberately limited to calls to action, active states, labels, and selected rules.
+- Page distinction is achieved through proportion and spacing rather than unique graphics.
+- Motion is limited to a short initial hero entrance and is disabled for reduced-motion users.
 
-The DOM structure and responsive rules are unchanged from Version 14.0. Only the release-specific asset references, metadata theme color, and controlled visual tokens/styles have changed. The same mobile-overflow and navigation tests must pass before deployment.
+## Engineering controls
+
+- Version-specific CSS and JavaScript filenames prevent stale-cache mismatches.
+- The Version 14.1 Safari and narrow-screen overflow protections remain in place.
+- Decorative watermark is removed below the desktop breakpoint.
