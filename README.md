@@ -1,24 +1,20 @@
-# Lochlann Strategies Website — Version 14.0
+# Lochlann Strategies Website — Version 14.1
 
-This is a deployment-ready static website release.
+This release retains the cache-safe, mobile-tested structure of Version 14.0 and restores the darker Lochlann brand presence.
 
-## What this release fixes
+## Brand direction
 
-- Uses uniquely versioned CSS and JavaScript filenames so a browser or CDN cannot combine new HTML with an older, incompatible stylesheet.
-- Preserves the clean editorial design with no diagrams, arrows, stock illustrations, or consulting-infographic devices.
-- Keeps the continuous warm-ivory, stone, mist, muted-blue, navy, and brass palette.
-- Adds explicit mobile-Safari containment for grids, long links, buttons, email addresses, and the navigation panel.
-- Keeps the navigation collapsed without JavaScript through a native `details` element.
-- Keeps every HTML page indented, semantic, and divided with review comments.
+- Predominantly navy and slate rather than white or light page fields.
+- Dark-to-dark transitions between sections to avoid harsh navy-to-white shifts.
+- Warm ivory reserved for typography and selected controls.
+- Brass reserved for rules, labels, and primary calls to action.
+- No diagrams, arrows, stock icons, decorative line art, or consulting-infographic devices.
 
 ## Deployment
 
-Upload **all files and folders in this package to the repository root in one release**.
-The pages reference:
+Upload all files and folders to the repository root in one release. The pages reference uniquely versioned assets:
 
-- `assets/lochlann-v14.0.css`
-- `assets/lochlann-v14.0.js`
+- `assets/lochlann-v14.1.css`
+- `assets/lochlann-v14.1.js`
 
-Older `assets/site.css` and `assets/site.js` files may remain in the repository; this release does not reference them. The new filenames are intentional cache-busting controls.
-
-After GitHub Pages completes deployment, open the site in Safari and refresh once. The new filename means a destructive cache clear should not be required.
+These filenames prevent Safari or GitHub Pages from pairing this HTML with an older stylesheet.

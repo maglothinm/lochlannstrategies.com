@@ -1,20 +1,11 @@
-# Professional Review Notes — Version 14.0
+# Professional Review Notes — Version 14.1
 
-## Brand direction
+## Marketing and brand assessment
 
-The site presents Lochlann Strategies as a selective executive advisory firm, not a volume consultancy. Visual distinction comes from editorial typography, measured spacing, restrained brass rules, and controlled dark panels rather than icons, diagrams, arrows, or decorative graphics.
+Version 14.0 solved the responsive failure but overcorrected toward a light editorial theme. That reduced the visual equity established by Lochlann's navy-and-brass identity and made the site feel more like a general professional-services publication than a selective executive advisory firm.
 
-## Technical finding behind the failed mobile view
+Version 14.1 keeps the successful structure, typography, spacing, and mobile behavior while restoring a dominant navy field. Visual variation now comes from subtle changes among ink, slate, muted blue-gray, and contained brass accents—not from alternating white and navy blocks.
 
-The supplied iPhone screenshot showed the new HTML structure rendered with an incompatible older stylesheet. The evidence was the combination of a visible skip link, desktop navigation on a mobile viewport, an oversized legacy headline treatment, and uncontained columns. The new HTML and the local release stylesheet did not share the same class names.
+## Web-engineering standard
 
-Version 14 prevents that mismatch by assigning release-specific filenames to CSS and JavaScript. It also adds explicit containment and wrapping rules for mobile Safari.
-
-## Acceptance standard
-
-- No horizontal document overflow at 320, 375, 390, 414, 430, 768, 1024, or 1440 CSS pixels.
-- Mobile navigation is closed on load and remains inside the viewport when open.
-- Skip link is visually hidden except during keyboard focus.
-- No heading, button, link, or email address exceeds its content column.
-- All internal links and referenced assets resolve.
-- JavaScript is optional; core content and navigation work without it.
+The DOM structure and responsive rules are unchanged from Version 14.0. Only the release-specific asset references, metadata theme color, and controlled visual tokens/styles have changed. The same mobile-overflow and navigation tests must pass before deployment.
