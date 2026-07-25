@@ -1,19 +1,27 @@
-# Version 14.2 Review Notes
+# Version 15.0 Review Notes
 
-## Design position
+## Design constraints retained from Version 14.2
 
-This is a visual-polish release, not a redesign. The Version 14.1 information architecture, wording, responsive grids, navigation, and component structure remain intact.
+- Predominantly dark navy, ink, and slate surfaces.
+- No diagrams, arrow graphics, icon grids, parallax, or theatrical page changes.
+- Semantic, indented HTML with clearly labeled sections.
+- Centralized CSS and minimal progressive-enhancement JavaScript.
+- Safari-safe shrinking, wrapping, and horizontal-overflow protections.
+- Reduced-motion support.
 
-## Brand controls
+## Visual-interest rules
 
-- No diagrams, arrows, stock illustrations, icon systems, maps, or repeating patterns.
-- The Lochlann crest is the only decorative graphic and appears once as a subtle desktop-only watermark.
-- Brass is deliberately limited to calls to action, active states, labels, and selected rules.
-- Page distinction is achieved through proportion and spacing rather than unique graphics.
-- Motion is limited to a short initial hero entrance and is disabled for reduced-motion users.
+- Photography is limited to two images across the site.
+- The Lochlann crest is the only watermark device.
+- Watermarks are low-opacity and not repeated on every page.
+- Brass flourishes organize content but do not become decorative wallpaper.
+- Button and menu motion stays under 420 milliseconds and remains functional
+  without JavaScript.
 
-## Engineering controls
+## Editorial rules
 
-- Version-specific CSS and JavaScript filenames prevent stale-cache mismatches.
-- The Version 14.1 Safari and narrow-screen overflow protections remain in place.
-- Decorative watermark is removed below the desktop breakpoint.
+- One core idea per section.
+- Supporting copy normally limited to one sentence.
+- Repeated explanations of executive judgment, consequential decisions, and
+  senior attention were removed.
+- Specific experience and operating roles were preserved.
