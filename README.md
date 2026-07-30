@@ -1,19 +1,33 @@
-# Lochlann Strategies v16.0
+# Lochlann Strategies — Version 15.0
 
-Stakeholder-optimized revision of the Lochlann Strategies static website.
+Version 15.0 is an editorial and visual refinement of the stable Version 14.2 site.
+It preserves the dark brand system, URLs, semantic HTML, mobile safeguards, and
+minimal-JavaScript architecture while reducing copy density and adding selective
+visual interest.
 
-## Deploy
+## What changed
 
-Upload the contents of this directory to the existing GitHub Pages repository root, replacing the prior HTML/CSS/JS files while retaining any repository-level GitHub configuration.
+- Primary-page copy reduced by roughly 55 percent from Version 14.2.
+- Homepage decision points reduced from five to three.
+- Engagement structures consolidated from six descriptions to three.
+- Two restrained, dark-graded industrial photographs added.
+- Crest watermarks limited to the homepage image, Experience hero, About hero,
+  and founder panel.
+- Fine brass flourishes added to principal section headings.
+- Mobile hamburger now transforms into a close icon.
+- Buttons receive a restrained highlight and pressed state without arrows.
+- New cache-safe asset names: `lochlann-v15.0.css` and `lochlann-v15.0.js`.
 
-## Primary changes
+## Deployment
 
-- Preserves the dark navy, slate, brass, and industrial visual system.
-- Repositions Lochlann as a selective executive platform rather than a volume or fractional consulting practice.
-- Brings forward strategic-account ownership, prime/OEM ecosystems, mission and industrial infrastructure, cross-region execution, capture governance, commercial discipline, and delivery continuity.
-- Uses conservative attribution for prior organizational and team results.
-- Retains the current public page paths to avoid broken links.
+Upload the complete contents of this directory to the repository root in one
+commit. Do not upload the enclosing directory itself.
 
-## QA
+## Image credits
 
-Open `index.html` locally or serve the folder with a static web server. Verify all six pages at desktop and mobile widths before deployment.
+- Port at night: CHUTTERSNAP, Unsplash photo `M3yYOCob6kE`.
+- Industrial facility: Ant Rozetsky, Unsplash photo `SLIFI67jv5k`.
+
+Both source pages identify the photographs as free to use under the Unsplash
+License. The bundled files are resized, compressed, and color-graded for the
+Lochlann site.
