@@ -1,33 +1,27 @@
-# v16.3 Review Notes
+# v16.3.2 Review Notes
 
-## Retained from v16.2
+## Retained from v16.3.1
 
 - Predominantly dark navy, ink, and slate surfaces.
-- Restrained brass accents and low-opacity crest watermarks.
-- Existing wording, public URLs, content hierarchy, and page order.
+- Restrained brass accents, crest watermarks, imagery, wording, and page order.
 - Semantic, indented, human-reviewable HTML.
-- Centralized CSS and minimal progressive-enhancement JavaScript.
 - Safari-safe grid shrinking, wrapping, long-link handling, and horizontal-overflow protections.
-- Reduced-motion support.
+- Animated hamburger-to-X control and reduced-motion support.
+- No use of the word “conceptual” in public-facing HTML.
 
-## Visual changes
+## Navigation change
 
-- One new generated fighter-hangar image is used on the Experience hero.
-- One retained integration image is repositioned as an editorial visual break.
-- The rejected boardroom image is not included.
-- The generated port image is not included because it would duplicate the existing infrastructure imagery system.
-- Image movement is limited to a restrained 1.2% hover scale and a short desktop-only initial reveal on devices that allow motion; mobile imagery renders without entrance animation.
+- The site header now uses `position: fixed` rather than relying on `position: sticky`.
+- The header spans the viewport and remains visible at every scroll position.
+- The document receives a matching top offset via `padding-top: var(--header)`.
+- The mobile navigation panel is explicitly positioned below the fixed header.
+- Desktop navigation and the mobile hamburger remain continuously accessible without auto-hiding.
 
 ## Acceptance criteria
 
+- Header remains at viewport top after scrolling on every page.
+- Main content begins below the header at load.
+- Mobile menu opens below the header and remains within the viewport.
 - No horizontal overflow at 320, 375, 390, 414, 430, 768, 1024, or 1440 CSS pixels.
-- Mobile navigation remains collapsed on load and animates into an X when opened.
-- The skip link remains visually hidden until keyboard focus.
-- The fighter remains visible in the desktop and mobile Experience hero crops.
-- No boardroom imagery, arrows, diagrams, or icon grids are present.
-## v16.3.1 copy correction
-
-- Removed the word “conceptual” from all live HTML captions, alternative text, and accessibility labels.
-- Replaced it with neutral, descriptive image language.
-- No layout, styling, imagery, navigation, or responsive behavior changed.
-
+- Skip link remains visually hidden until keyboard focus.
+- No imagery, wording, layout modules, or page URLs changed.
