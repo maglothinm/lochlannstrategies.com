@@ -25,3 +25,9 @@
 - The skip link remains visually hidden until keyboard focus.
 - The fighter remains visible in the desktop and mobile Experience hero crops.
 - No boardroom imagery, arrows, diagrams, or icon grids are present.
+## v16.3.1 copy correction
+
+- Removed the word “conceptual” from all live HTML captions, alternative text, and accessibility labels.
+- Replaced it with neutral, descriptive image language.
+- No layout, styling, imagery, navigation, or responsive behavior changed.
+
