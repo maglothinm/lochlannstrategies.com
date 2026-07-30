@@ -1,27 +1,27 @@
-# Version 15.0 Review Notes
+# v16.3 Review Notes
 
-## Design constraints retained from Version 14.2
+## Retained from v16.2
 
 - Predominantly dark navy, ink, and slate surfaces.
-- No diagrams, arrow graphics, icon grids, parallax, or theatrical page changes.
-- Semantic, indented HTML with clearly labeled sections.
+- Restrained brass accents and low-opacity crest watermarks.
+- Existing wording, public URLs, content hierarchy, and page order.
+- Semantic, indented, human-reviewable HTML.
 - Centralized CSS and minimal progressive-enhancement JavaScript.
-- Safari-safe shrinking, wrapping, and horizontal-overflow protections.
+- Safari-safe grid shrinking, wrapping, long-link handling, and horizontal-overflow protections.
 - Reduced-motion support.
 
-## Visual-interest rules
+## Visual changes
 
-- Photography is limited to two images across the site.
-- The Lochlann crest is the only watermark device.
-- Watermarks are low-opacity and not repeated on every page.
-- Brass flourishes organize content but do not become decorative wallpaper.
-- Button and menu motion stays under 420 milliseconds and remains functional
-  without JavaScript.
+- One new generated fighter-hangar image is used on the Experience hero.
+- One retained integration image is repositioned as an editorial visual break.
+- The rejected boardroom image is not included.
+- The generated port image is not included because it would duplicate the existing infrastructure imagery system.
+- Image movement is limited to a restrained 1.2% hover scale and a short desktop-only initial reveal on devices that allow motion; mobile imagery renders without entrance animation.
 
-## Editorial rules
+## Acceptance criteria
 
-- One core idea per section.
-- Supporting copy normally limited to one sentence.
-- Repeated explanations of executive judgment, consequential decisions, and
-  senior attention were removed.
-- Specific experience and operating roles were preserved.
+- No horizontal overflow at 320, 375, 390, 414, 430, 768, 1024, or 1440 CSS pixels.
+- Mobile navigation remains collapsed on load and animates into an X when opened.
+- The skip link remains visually hidden until keyboard focus.
+- The fighter remains visible in the desktop and mobile Experience hero crops.
+- No boardroom imagery, arrows, diagrams, or icon grids are present.

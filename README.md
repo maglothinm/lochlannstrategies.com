@@ -1,22 +1,21 @@
-# Lochlann Strategies v16.1
+# Lochlann Strategies v16.3 — Visual Enhancements
 
-Stakeholder-optimized revision of the Lochlann Strategies static website with a facilities-focused imagery system.
-
-## Deploy
-
-Upload the contents of this directory to the existing GitHub Pages repository root, replacing the prior HTML/CSS/JS files while retaining any repository-level GitHub configuration.
+This package retains the v16.2 dark navy, slate, brass, typography, page architecture, navigation, URLs, and responsive behavior while adding a controlled aerospace visual enhancement.
 
 ## Primary changes
 
-- Replaces the container-port and legacy heavy-industrial imagery with three generated conceptual environments:
-  - a modern mission-critical manufacturing and integration facility;
-  - an advanced aerospace integration high bay; and
-  - an aerial advanced-manufacturing campus with supporting infrastructure.
-- Aligns the visual narrative with strategic accounts, prime/OEM capital programs, facilities, infrastructure, site readiness, and multidisciplinary delivery.
-- Preserves the approved copy, page architecture, dark navy/slate/brass visual system, and all existing public page paths.
-- Labels the generated environments as conceptual so they are not presented as Lochlann projects, client facilities, or prior employer assets.
-- Uses conservative attribution for prior organizational and team results.
+- Replaces the prior Experience hero image with a generated conceptual stealth-fighter and mission-hangar environment.
+- Includes a mobile-specific crop so the aircraft, control tower, and hangar remain visible on narrow screens.
+- Retains the prior advanced-manufacturing integration image as a concise visual interlude on the Experience page.
+- Retains the two v16.2 homepage facilities images.
+- Excludes the rejected boardroom image and the duplicative generated port image.
+- Preserves the animated hamburger-to-X control, restrained image entrance, crest watermarks, dark theme, and existing content.
+- Uses cache-safe `lochlann-v16.3.css` and `lochlann-v16.3.js` assets.
 
-## QA
+## Image representation
 
-Open `index.html` locally or serve the folder with a static web server. Verify all pages at desktop and mobile widths before deployment.
+All mission-facility, campus, integration, and fighter-hangar imagery is conceptual. It is not presented as a Lochlann client project, a specific government facility, or an image of an actual customer asset. The fighter is deliberately described as a conceptual stealth fighter rather than an authenticated photograph of a specific aircraft.
+
+## Deploy
+
+Upload the contents of this directory to the existing GitHub Pages repository root in one commit, replacing the prior HTML, CSS, and JavaScript files. The release-specific CSS and JavaScript filenames prevent Safari or GitHub Pages from combining new HTML with an older cached stylesheet.
