@@ -1,5 +1,13 @@
 # Changelog
 
+## v17.0.1 — Employer Reference Cleanup
+
+### Changed
+
+- Removed the superseded employer reference from every public credential list.
+- Rebalanced the credential presentation from five columns to four.
+- Advanced release asset identifiers to prevent stale browser caching.
+
 ## v17.0 — Executive Visual System
 
 ### Added

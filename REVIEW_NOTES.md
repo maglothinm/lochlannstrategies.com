@@ -1,4 +1,4 @@
-# Lochlann Strategies v17.0 — Review Notes
+# Lochlann Strategies v17.0.1 — Review Notes
 
 ## Design intent
 
@@ -41,8 +41,8 @@
 
 ## Files added or replaced
 
-- `assets/lochlann-v17.0.css`
-- `assets/lochlann-v17.0.js`
+- `assets/lochlann-v17.0.1.css`
+- `assets/lochlann-v17.0.1.js`
 - `assets/lochlann-share-preview-v17.jpg`
 - `assets/lochlann-crest-mark.webp`
 - `assets/strategic-contours.svg`

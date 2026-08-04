@@ -1,6 +1,6 @@
-# Lochlann Strategies v17.0 — Executive Visual System
+# Lochlann Strategies v17.0.1 — Executive Visual System
 
-This is the complete replacement release built from the v16.3.2 fixed-navigation baseline. It preserves the dark navy identity, crest, page URLs, core positioning, source imagery, SEO fundamentals, fixed navigation, and responsive behavior while rebuilding the visual hierarchy and interaction system.
+This is the complete replacement release built from the v16.3.2 fixed-navigation baseline and updated through v17.0.1. It preserves the dark navy identity, crest, page URLs, core positioning, source imagery, SEO fundamentals, fixed navigation, and responsive behavior while rebuilding the visual hierarchy and interaction system.
 
 ## What changed
 
@@ -18,6 +18,6 @@ This is the complete replacement release built from the v16.3.2 fixed-navigation
 
 Upload the **contents of this directory** to the existing GitHub Pages repository root in one commit, replacing the prior website HTML and assets. Preserve any repository-only file that may exist outside the package, especially `CNAME`.
 
-The release-specific `lochlann-v17.0.css`, `lochlann-v17.0.js`, and `lochlann-share-preview-v17.jpg` filenames reduce the risk of Safari or GitHub Pages serving a mixed old/new cache state.
+The release-specific `lochlann-v17.0.1.css`, `lochlann-v17.0.1.js`, and `lochlann-share-preview-v17.jpg` filenames reduce the risk of Safari or GitHub Pages serving a mixed old/new cache state.
 
 No build process, package manager, external font service, JavaScript framework, or third-party runtime dependency is required.
