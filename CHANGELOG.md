@@ -1,5 +1,13 @@
 # Changelog
 
+## v17.0.2 — Home visual and operating-environment correction
+
+- Removed the circular targeting reticle and crosshair from the Home facility image.
+- Added **U.S. Department of Energy** to the Home and Experience operating-environment credentials.
+- Replaced **L3 Technologies** with **L3Harris** everywhere.
+- Rebalanced the credential strip for five entries across desktop, tablet, and mobile layouts.
+- Advanced the CSS and JavaScript asset identifiers to v17.0.2 for cache invalidation.
+
 ## v17.0.1 — Employer Reference Cleanup
 
 ### Changed

@@ -1,4 +1,4 @@
-# Lochlann Strategies v17.0.1 — Review Notes
+# Lochlann Strategies v17.0.2 — Review Notes
 
 ## Design intent
 
@@ -41,11 +41,17 @@
 
 ## Files added or replaced
 
-- `assets/lochlann-v17.0.1.css`
-- `assets/lochlann-v17.0.1.js`
+- `assets/lochlann-v17.0.2.css`
+- `assets/lochlann-v17.0.2.js`
 - `assets/lochlann-share-preview-v17.jpg`
 - `assets/lochlann-crest-mark.webp`
 - `assets/strategic-contours.svg`
 - `assets/perspective-grid.svg`
 - `assets/favicon-32.png`
 - `assets/apple-touch-icon.png`
+## v17.0.2 verification
+
+- No targeting reticle or crosshair is present over the Home facility image.
+- Home and Experience display U.S. Air Force, U.S. Department of Energy, Honeywell, GDIT, and L3Harris.
+- S2 Global and L3 Technologies do not appear anywhere in the release.
+
