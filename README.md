@@ -1,17 +1,23 @@
-# Lochlann Strategies v16.3.2 — Fixed Navigation
+# Lochlann Strategies v17.0 — Executive Visual System
 
-This package retains the v16.3.1 dark navy, slate, brass, typography, imagery, copy, page architecture, navigation labels, URLs, and responsive behavior.
+This is the complete replacement release built from the v16.3.2 fixed-navigation baseline. It preserves the dark navy identity, crest, page URLs, core positioning, source imagery, SEO fundamentals, fixed navigation, and responsive behavior while rebuilding the visual hierarchy and interaction system.
 
-## Primary change
+## What changed
 
-- Anchors the global header to the viewport so it remains available throughout scrolling.
-- Keeps the full navigation visible on desktop and the animated hamburger control visible on mobile.
-- Preserves the existing scrolled-state background and shadow.
-- Positions the mobile menu directly beneath the fixed header.
-- Adds the exact header-height offset to the document so page content is never hidden underneath it.
-- Retains the v16.3.1 fighter-hangar and manufacturing imagery and all prior copy corrections.
-- Uses cache-safe `lochlann-v16.3.2.css` and `lochlann-v16.3.2.js` assets.
+- Recast the site as a restrained, high-end executive advisory experience rather than a conventional consultant template.
+- Built a cinematic home hero with a clearer value proposition, operating arc, proof signals, and mission-facility imagery.
+- Gave Capabilities, Approach, Experience, About, and Contact distinct compositions instead of repeating the same card-and-copy pattern.
+- Added crest-derived contour fields, perspective grids, technical sightlines, editorial dividers, controlled brass accents, and deeper image treatments.
+- Retained the fighter-hangar, advanced-manufacturing, mission-campus, and facility imagery while improving crop, contrast, and context.
+- Added subtle reveal motion, hover movement, scroll progress, pointer-responsive hero depth, and a reduced-motion fallback.
+- Rebuilt the mobile menu as a full remaining-viewport navigation layer beneath the fixed header, with page locking, focus containment, Escape handling, focus return, and an animated hamburger-to-X control.
+- Added a new social-share image, compact header crest asset, 32 px favicon, and Apple touch icon.
+- Preserved semantic HTML, one H1 and one main landmark per page, descriptive image text, canonical metadata, JSON-LD, sitemap, robots file, and GitHub Pages compatibility.
 
-## Deploy
+## Deployment
 
-Upload the contents of this directory to the existing GitHub Pages repository root in one commit, replacing the prior HTML, CSS, and JavaScript files. The release-specific asset filenames prevent Safari or GitHub Pages from combining the new HTML with an older cached stylesheet.
+Upload the **contents of this directory** to the existing GitHub Pages repository root in one commit, replacing the prior website HTML and assets. Preserve any repository-only file that may exist outside the package, especially `CNAME`.
+
+The release-specific `lochlann-v17.0.css`, `lochlann-v17.0.js`, and `lochlann-share-preview-v17.jpg` filenames reduce the risk of Safari or GitHub Pages serving a mixed old/new cache state.
+
+No build process, package manager, external font service, JavaScript framework, or third-party runtime dependency is required.

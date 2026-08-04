@@ -1,27 +1,51 @@
-# v16.3.2 Review Notes
+# Lochlann Strategies v17.0 — Review Notes
 
-## Retained from v16.3.1
+## Design intent
 
-- Predominantly dark navy, ink, and slate surfaces.
-- Restrained brass accents, crest watermarks, imagery, wording, and page order.
-- Semantic, indented, human-reviewable HTML.
-- Safari-safe grid shrinking, wrapping, long-link handling, and horizontal-overflow protections.
-- Animated hamburger-to-X control and reduced-motion support.
-- No use of the word “conceptual” in public-facing HTML.
+- Predominantly dark navy, ink, slate, and restrained brass.
+- Serious aerospace, defense, critical-infrastructure, and executive-operating tone.
+- Editorial typography and cinematic imagery without theatrical animation or generic stock-consulting motifs.
+- Page-specific visual rhythm with shorter proof statements, clearer handoffs, and more deliberate whitespace.
+- No boardroom or handshake imagery and no public-facing use of the word “conceptual.”
 
-## Navigation change
+## Functional continuity
 
-- The site header now uses `position: fixed` rather than relying on `position: sticky`.
-- The header spans the viewport and remains visible at every scroll position.
-- The document receives a matching top offset via `padding-top: var(--header)`.
-- The mobile navigation panel is explicitly positioned below the fixed header.
-- Desktop navigation and the mobile hamburger remain continuously accessible without auto-hiding.
+- Existing public URLs remain unchanged: Home, Capabilities, Approach, Experience, About, Contact, and 404.
+- Header remains fixed at the viewport top on every page.
+- Desktop navigation remains continuously available.
+- Mobile navigation opens below the fixed header and fills the remaining viewport.
+- Email, LinkedIn, internal navigation, favicon, social metadata, robots, sitemap, and GitHub Pages behavior are retained or upgraded.
 
-## Acceptance criteria
+## Interaction and accessibility review
 
-- Header remains at viewport top after scrolling on every page.
-- Main content begins below the header at load.
-- Mobile menu opens below the header and remains within the viewport.
-- No horizontal overflow at 320, 375, 390, 414, 430, 768, 1024, or 1440 CSS pixels.
-- Skip link remains visually hidden until keyboard focus.
-- No imagery, wording, layout modules, or page URLs changed.
+- Animated hamburger transforms into a close control.
+- Mobile drawer reports itself as a modal navigation dialog.
+- Background content becomes inert while the drawer is open.
+- Keyboard focus enters the menu, can reach the close control, remains contained, and returns to the trigger after closing.
+- Escape closes the menu.
+- Body scrolling is locked until the closing transition completes.
+- Reduced-motion preferences disable nonessential animation.
+- Skip link, visible focus treatment, semantic landmarks, descriptive image alternatives, and balanced heading structure are retained.
+
+## Acceptance tests completed
+
+- No horizontal overflow at 320, 375, 390, 430, 768, 960, 1024, or 1440 CSS pixels across all seven HTML pages.
+- Fixed-header position verified before and after scrolling at mobile and desktop widths on every page.
+- Mobile drawer dimensions, visibility, body lock, focus behavior, Escape behavior, and focus restoration verified in Chromium.
+- No browser console errors during the responsive and interaction suite.
+- No broken local page, stylesheet, script, image, icon, sitemap, or navigation references.
+- JSON-LD blocks parse successfully.
+- CSS parses without stylesheet errors; JavaScript passes Node syntax validation.
+- One `main`, one `h1`, one mobile drawer, and no duplicate IDs on every page.
+- No placeholder, TODO, lorem ipsum, boardroom, handshake, or “conceptual” text remains.
+
+## Files added or replaced
+
+- `assets/lochlann-v17.0.css`
+- `assets/lochlann-v17.0.js`
+- `assets/lochlann-share-preview-v17.jpg`
+- `assets/lochlann-crest-mark.webp`
+- `assets/strategic-contours.svg`
+- `assets/perspective-grid.svg`
+- `assets/favicon-32.png`
+- `assets/apple-touch-icon.png`
