@@ -1,0 +1,19 @@
+LOCHLANN STRATEGIES v17.0.4 — FULL DEPLOYMENT
+
+This is a complete site package based on v17.0.2 with the deployed v17.0.3
+name-search changes and the v17.0.4 iPhone Safari clipping correction.
+
+Deployment:
+1. Extract the ZIP.
+2. Replace the files at the root of the GitHub Pages publishing branch with
+   the extracted files, preserving the assets folder structure.
+3. Commit the changes.
+4. On iPhone Safari, close/reopen the tab or reload once. The stylesheet URL
+   now uses ?v=17.0.4, which forces the corrected CSS to load.
+
+Primary changed files:
+- index.html
+- about.html
+- sitemap.xml
+- assets/lochlann-v17.0.2.css
+- all HTML files (stylesheet cache key only)

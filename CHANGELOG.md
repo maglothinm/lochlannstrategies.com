@@ -1,5 +1,22 @@
 # Changelog
 
+## v17.0.4 — Responsive Mission-Panel Correction
+
+### Corrected
+
+- Prevented the “Mission + built environment” eyebrow and the opening words of “Complex systems only become operational…” from being clipped inside the shaped homepage panel.
+- Replaced absolute vertical centering with a content-driven grid composition, allowing the panel to grow with Safari font metrics at every responsive width.
+- Widened the headline measure on phones and retained the full image, overlay, tag list, and clipped-corner treatment.
+- Updated the stylesheet cache identifier to `v=17.0.4`.
+
+## v17.0.3 — Name-Search Update
+
+### Changed
+
+- Made Michael Maglothin the primary About-page heading and refined the page title and description.
+- Added linked Person, ProfilePage, and organization structured data.
+- Added restrained full-name founder references to the homepage and updated sitemap metadata.
+
 ## v17.0.2 — Operating-Environments Update
 
 ### Added
