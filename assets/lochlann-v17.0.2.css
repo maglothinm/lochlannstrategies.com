@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   Lochlann Strategies — v17.0.2
+   Lochlann Strategies — v17.0.4
    Integrated visual system: cinematic imagery, editorial hierarchy,
    restrained motion, and fixed responsive navigation.
    ========================================================================== */
@@ -1121,6 +1121,8 @@ a:hover .icon-arrow {
 
 .mission-stage {
   position: relative;
+  display: grid;
+  align-items: center;
   min-height: clamp(39rem, 64vw, 53rem);
   overflow: hidden;
   border: 1px solid var(--line-strong);
@@ -1151,12 +1153,12 @@ a:hover .icon-arrow {
 }
 
 .mission-stage-copy {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 50%;
-  left: clamp(1.5rem, 5vw, 5rem);
+  justify-self: start;
   width: min(39rem, 52%);
-  transform: translateY(-50%);
+  margin-left: clamp(1.5rem, 5vw, 5rem);
+  padding-block: 1.5rem;
 }
 
 .mission-stage-copy h2 {
@@ -3076,7 +3078,10 @@ a:hover .icon-arrow {
   }
 
   .mission-stage {
-    min-height: 46rem;
+    /* Let the content establish the card height on phones. The previous
+       fixed-height, bottom-anchored composition could push the eyebrow and
+       first headline line above the clipped frame in Safari. */
+    min-height: 0;
     clip-path: polygon(0 0, 93% 0, 100% 5%, 100% 100%, 7% 100%, 0 95%);
   }
 
@@ -3090,16 +3095,13 @@ a:hover .icon-arrow {
   }
 
   .mission-stage-copy {
-    top: auto;
-    right: 1.35rem;
-    bottom: 2rem;
-    left: 1.35rem;
-    width: auto;
-    transform: none;
+    width: 100%;
+    margin-left: 0;
+    padding: clamp(9.5rem, 42vw, 11.5rem) 1.35rem 2.5rem;
   }
 
   .mission-stage-copy h2 {
-    max-width: 10ch;
+    max-width: 100%;
   }
 
   .mission-tags {
@@ -3416,12 +3418,12 @@ a:hover .icon-arrow {
   }
 
   .mission-stage {
-    min-height: 49rem;
+    min-height: 0;
   }
 
   .mission-stage-copy {
-    right: 1.1rem;
-    left: 1.1rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
   }
 
   .page-hero-image {
