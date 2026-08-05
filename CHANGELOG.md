@@ -1,20 +1,31 @@
 # Changelog
 
-## v17.0.2 — Home visual and operating-environment correction
+## v17.0.2 — Operating-Environments Update
 
-- Removed the circular targeting reticle and crosshair from the Home facility image.
-- Added **U.S. Department of Energy** to the Home and Experience operating-environment credentials.
-- Replaced **L3 Technologies** with **L3Harris** everywhere.
-- Rebalanced the credential strip for five entries across desktop, tablet, and mobile layouts.
-- Advanced the CSS and JavaScript asset identifiers to v17.0.2 for cache invalidation.
+### Added
 
-## v17.0.1 — Employer Reference Cleanup
+- U.S. Department of Energy between U.S. Air Force and Honeywell on Home and Experience.
+
+### Corrected
+
+- Updated the L3 employer name to L3Harris.
 
 ### Changed
 
-- Removed the superseded employer reference from every public credential list.
-- Rebalanced the credential presentation from five columns to four.
-- Advanced release asset identifiers to prevent stale browser caching.
+- Expanded the operating-environments grid to five desktop columns, three tablet columns, and one mobile column.
+- Updated stylesheet and script cache identifiers for clean deployment.
+
+## v17.0.1 — Content and Imagery Correction
+
+### Removed
+
+- All public-facing references to the requested prior employer.
+- The targeting reticle over the Home facility image.
+
+### Changed
+
+- Rebalanced the selected operating-environments grid from five columns to four.
+- Updated stylesheet and script cache identifiers for clean deployment.
 
 ## v17.0 — Executive Visual System
 
@@ -23,7 +34,7 @@
 - Cinematic, split-composition home hero and proof architecture.
 - Connected-growth operating-system graphic.
 - Page-specific hero and content systems for all primary pages.
-- Contour, grid, sightline, watermark, progress, reveal, and hover treatments.
+- Contour, grid, watermark, progress, reveal, and hover treatments.
 - Full-viewport mobile navigation dialog with focus management and background isolation.
 - New Open Graph image, header crest mark, favicon size, and Apple touch icon.
 
@@ -37,6 +48,6 @@
 ### Preserved
 
 - Dark navy Lochlann identity and crest branding.
-- Core positioning, factual career narrative, employer sequence, contact information, page names, public URLs, robots policy, and sitemap coverage.
+- Core positioning, factual career narrative, contact information, page names, public URLs, robots policy, and sitemap coverage.
 - Existing mission-facility, aerospace, and advanced-manufacturing imagery.
 - Static GitHub Pages deployment with no runtime dependencies.

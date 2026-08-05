@@ -37,7 +37,8 @@
 - JSON-LD blocks parse successfully.
 - CSS parses without stylesheet errors; JavaScript passes Node syntax validation.
 - One `main`, one `h1`, one mobile drawer, and no duplicate IDs on every page.
-- No placeholder, TODO, lorem ipsum, boardroom, handshake, or “conceptual” text remains.
+- No placeholder, TODO, lorem ipsum, boardroom, handshake, “conceptual,” or removed-employer text remains.
+- No targeting reticle is displayed over the Home facility image.
 
 ## Files added or replaced
 
@@ -49,9 +50,8 @@
 - `assets/perspective-grid.svg`
 - `assets/favicon-32.png`
 - `assets/apple-touch-icon.png`
-## v17.0.2 verification
 
-- No targeting reticle or crosshair is present over the Home facility image.
-- Home and Experience display U.S. Air Force, U.S. Department of Energy, Honeywell, GDIT, and L3Harris.
-- S2 Global and L3 Technologies do not appear anywhere in the release.
+## v17.0.2 content verification
 
+- Home and Experience show the requested order: U.S. Air Force, U.S. Department of Energy, Honeywell, GDIT, L3Harris.
+- No obsolete L3 employer naming remains.
