@@ -1,0 +1,37 @@
+LOCHLANN STRATEGIES v17.0.3 — VERIFICATION
+===============================================
+
+Package type: overlay for the existing v17.0.2 repository
+Files changed: index.html, about.html, sitemap.xml
+
+HTML / SEO checks
+-----------------
+index.html: PASS
+  Title: Lochlann Strategies | Strategic Accounts, Capture & Complex Delivery
+  H1: Connect access to executable growth.
+  Canonical: https://lochlannstrategies.com/
+  One H1, one main landmark, valid JSON-LD, unique IDs: PASS
+  Michael Maglothin and Michael J. Maglothin present in visible text: PASS
+  v17.0.2 CSS and JavaScript references retained: PASS
+about.html: PASS
+  Title: Michael Maglothin | Founder, Lochlann Strategies
+  H1: Michael Maglothin
+  Canonical: https://lochlannstrategies.com/about.html
+  One H1, one main landmark, valid JSON-LD, unique IDs: PASS
+  Michael Maglothin and Michael J. Maglothin present in visible text: PASS
+  v17.0.2 CSS and JavaScript references retained: PASS
+
+Sitemap XML: PASS (6 canonical URLs)
+
+Responsive render checks
+------------------------
+index.html · desktop · viewport 1440 px: PASS
+  H1 count 1; main count 1; images loaded 5; maximum measured overflow 0 px
+index.html · mobile · viewport 390 px: PASS
+  H1 count 1; main count 1; images loaded 5; maximum measured overflow 0 px
+about.html · desktop · viewport 1440 px: PASS
+  H1 count 1; main count 1; images loaded 5; maximum measured overflow 0 px
+about.html · mobile · viewport 390 px: PASS
+  H1 count 1; main count 1; images loaded 5; maximum measured overflow 1 px
+
+No visual assets, CSS, JavaScript, or unmodified pages are replaced by this overlay.
