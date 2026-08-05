@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   Lochlann Strategies — v17.0.1
+   Lochlann Strategies — v17.0.2
    Integrated visual system: cinematic imagery, editorial hierarchy,
    restrained motion, and fixed responsive navigation.
    ========================================================================== */
@@ -846,7 +846,6 @@ a:hover .icon-arrow {
   pointer-events: none;
 }
 
-
 .hero-image-frame figcaption,
 .page-hero-image figcaption {
   position: absolute;
@@ -1223,15 +1222,14 @@ a:hover .icon-arrow {
 
 .credential-list li {
   display: flex;
-  min-height: clamp(5.25rem, 8vw, 6.5rem);
+  min-height: 6.25rem;
   align-items: center;
   justify-content: center;
   padding: clamp(1.3rem, 2.5vw, 2rem) 0.75rem;
   border-left: 1px solid var(--line);
   color: var(--ivory);
   font-family: var(--display);
-  font-size: clamp(0.92rem, 1.45vw, 1.24rem);
-  line-height: 1.22;
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
   text-align: center;
 }
 
@@ -2900,6 +2898,24 @@ a:hover .icon-arrow {
     max-width: 13ch;
   }
 
+  .credential-list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .credential-list li {
+    grid-column: span 2;
+  }
+
+  .credential-list li:nth-child(4),
+  .credential-list li:nth-child(5) {
+    grid-column: span 3;
+    border-top: 1px solid var(--line);
+  }
+
+  .credential-list li:nth-child(4) {
+    border-left: 0;
+  }
+
   .founder-layout,
   .orientation-feature-grid,
   .contact-layout {
@@ -2980,7 +2996,6 @@ a:hover .icon-arrow {
   .hero-image-frame img {
     object-position: 45% center;
   }
-
 
   .operating-arc {
     position: relative;
@@ -3111,7 +3126,10 @@ a:hover .icon-arrow {
   }
 
   .credential-list li,
-  .credential-list li:first-child {
+  .credential-list li:first-child,
+  .credential-list li:nth-child(4),
+  .credential-list li:nth-child(5) {
+    grid-column: auto;
     min-height: 0;
     justify-content: flex-start;
     padding: 0.85rem 0;
