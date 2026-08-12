@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   Lochlann Strategies — v17.0.5
+   Lochlann Strategies — v17.0.4
    Integrated visual system: cinematic imagery, editorial hierarchy,
    restrained motion, and fixed responsive navigation.
    ========================================================================== */
@@ -189,7 +189,7 @@ h3 {
   align-items: center;
   gap: 0.75rem;
   color: var(--gold-500);
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.18em;
   line-height: 1.35;
@@ -211,14 +211,14 @@ h3 {
 }
 
 .small-note {
-  color: var(--muted);
-  font-size: 0.8rem;
+  color: var(--muted-2);
+  font-size: 0.78rem;
   line-height: 1.55;
 }
 
 .index {
   color: var(--gold-500);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.16em;
   line-height: 1;
@@ -227,7 +227,7 @@ h3 {
 .card-kicker,
 .canvas-kicker {
   color: var(--gold-500);
-  font-size: 0.72rem;
+  font-size: 0.69rem;
   font-weight: 780;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -332,9 +332,9 @@ body.menu-open .site-header {
 
 .brand-text small {
   color: var(--gold-500);
-  font-size: 0.61rem;
+  font-size: 0.54rem;
   font-weight: 760;
-  letter-spacing: 0.23em;
+  letter-spacing: 0.26em;
 }
 
 .desktop-nav {
@@ -348,7 +348,7 @@ body.menu-open .site-header {
   position: relative;
   padding-block: 0.55rem;
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.73rem;
   font-weight: 690;
   letter-spacing: 0.06em;
   text-decoration: none;
@@ -388,7 +388,7 @@ body.menu-open .site-header {
   padding: 0.6rem 0.9rem;
   border: 1px solid var(--gold-line);
   color: var(--text);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-decoration: none;
@@ -496,7 +496,7 @@ a:hover .icon-arrow {
 
 .mobile-kicker {
   color: var(--gold-500);
-  font-size: 0.72rem;
+  font-size: 0.64rem;
   font-weight: 780;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -527,9 +527,9 @@ a:hover .icon-arrow {
 }
 
 .mobile-nav-index {
-  color: var(--muted);
+  color: var(--muted-2);
   font-family: var(--body);
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-weight: 780;
   letter-spacing: 0.13em;
 }
@@ -542,7 +542,7 @@ a:hover .icon-arrow {
   margin-top: auto;
   padding-top: 2rem;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.77rem;
 }
 
 .mobile-contact a {
@@ -573,7 +573,7 @@ a:hover .icon-arrow {
   border: 1px solid var(--gold-500);
   background: var(--gold-500);
   color: var(--ink-1000);
-  font-size: 0.74rem;
+  font-size: 0.69rem;
   font-weight: 820;
   letter-spacing: 0.11em;
   line-height: 1.2;
@@ -632,7 +632,7 @@ a:hover .icon-arrow {
   width: fit-content;
   border-bottom: 1px solid var(--gold-line);
   color: var(--gold-400);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 780;
   letter-spacing: 0.09em;
   line-height: 1.4;
@@ -650,7 +650,7 @@ a:hover .icon-arrow {
 }
 
 .text-link-large {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -850,12 +850,10 @@ a:hover .icon-arrow {
 .page-hero-image figcaption {
   position: absolute;
   z-index: 5;
-  right: max(1.4rem, 6%);
-  bottom: 1.6rem;
-  max-width: 82%;
-  color: rgba(244, 239, 231, 0.84);
-  font-size: 0.66rem;
-  text-align: right;
+  right: 1.4rem;
+  bottom: 1.2rem;
+  color: rgba(244, 239, 231, 0.74);
+  font-size: 0.58rem;
   font-weight: 760;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -879,7 +877,7 @@ a:hover .icon-arrow {
   padding-bottom: 0.7rem;
   border-bottom: 1px solid var(--line);
   color: var(--gold-500);
-  font-size: 0.68rem;
+  font-size: 0.61rem;
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -897,7 +895,7 @@ a:hover .icon-arrow {
   padding-block: 0.42rem;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
 }
 
 .operating-arc li:last-child {
@@ -906,7 +904,7 @@ a:hover .icon-arrow {
 
 .operating-arc li span {
   color: var(--gold-500);
-  font-size: 0.66rem;
+  font-size: 0.6rem;
   font-weight: 800;
 }
 
@@ -940,8 +938,8 @@ a:hover .icon-arrow {
 
 .hero-proof-strip span {
   max-width: 16rem;
-  color: var(--muted);
-  font-size: 0.74rem;
+  color: var(--muted-2);
+  font-size: 0.69rem;
   line-height: 1.5;
 }
 
@@ -1111,7 +1109,7 @@ a:hover .icon-arrow {
 .operating-steps p {
   margin-top: 0.85rem;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -1187,7 +1185,7 @@ a:hover .icon-arrow {
   padding: 0.78rem 0.8rem 0.78rem 0;
   border-bottom: 1px solid var(--line);
   color: var(--text);
-  font-size: 0.74rem;
+  font-size: 0.71rem;
   font-weight: 690;
   letter-spacing: 0.03em;
 }
@@ -1214,7 +1212,7 @@ a:hover .icon-arrow {
 .credential-heading > p:last-child {
   max-width: 31rem;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   text-align: right;
 }
 
@@ -1244,8 +1242,8 @@ a:hover .icon-arrow {
 .credential-note {
   padding-top: 1rem;
   border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.69rem;
+  color: var(--muted-2);
+  font-size: 0.62rem;
   text-align: center;
 }
 
@@ -1336,7 +1334,7 @@ a:hover .icon-arrow {
 .engagement-card > p {
   margin-top: 1rem;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.9rem;
 }
 
 .engagement-card .text-link {
@@ -1581,7 +1579,7 @@ a:hover .icon-arrow {
   max-width: 40rem;
   margin-top: 1rem;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.9rem;
 }
 
 .tag-list {
@@ -1596,7 +1594,7 @@ a:hover .icon-arrow {
   padding: 0.38rem 0.55rem;
   border: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.2;
@@ -1638,7 +1636,7 @@ a:hover .icon-arrow {
 
 .boundary-rail p {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -1677,7 +1675,7 @@ a:hover .icon-arrow {
   align-items: center;
   gap: 1.2rem;
   color: var(--gold-500);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.16em;
 }
@@ -1695,7 +1693,7 @@ a:hover .icon-arrow {
   max-width: 41rem;
   margin-top: 0.8rem;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.91rem;
 }
 
 .mode-outputs {
@@ -1707,7 +1705,7 @@ a:hover .icon-arrow {
   padding: 0.55rem 0;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 690;
   letter-spacing: 0.03em;
 }
@@ -1753,7 +1751,7 @@ a:hover .icon-arrow {
   background: var(--navy-900);
   box-shadow: 0 0 0 0.7rem rgba(14, 43, 57, 0.9);
   color: var(--gold-400);
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 800;
 }
 
@@ -1764,7 +1762,7 @@ a:hover .icon-arrow {
 .cadence-path p {
   margin-top: 0.9rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
 }
 
 .principles-heading {
@@ -1812,7 +1810,7 @@ a:hover .icon-arrow {
 .conviction-grid p {
   margin-top: 0.9rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -1881,7 +1879,7 @@ a:hover .icon-arrow {
 
 .experience-hero-caption span {
   color: var(--gold-500);
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-weight: 780;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -1928,14 +1926,14 @@ a:hover .icon-arrow {
 
 .experience-proof-grid span {
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   line-height: 1.45;
 }
 
 .evidence-note {
   margin-top: 1rem;
-  color: var(--muted);
-  font-size: 0.7rem;
+  color: var(--muted-2);
+  font-size: 0.66rem;
   text-align: center;
 }
 
@@ -1966,8 +1964,8 @@ a:hover .icon-arrow {
   gap: 0.6rem;
   align-items: center;
   margin-top: 2rem;
-  color: var(--muted);
-  font-size: 0.69rem;
+  color: var(--muted-2);
+  font-size: 0.63rem;
   font-weight: 720;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -2009,7 +2007,7 @@ a:hover .icon-arrow {
   max-width: 46rem;
   margin-top: 0.95rem;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.9rem;
 }
 
 .environment-grid {
@@ -2131,7 +2129,7 @@ a:hover .icon-arrow {
   display: block;
   margin-top: 0.2rem;
   color: var(--gold-500);
-  font-size: 0.69rem;
+  font-size: 0.64rem;
   font-weight: 780;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -2149,8 +2147,8 @@ a:hover .icon-arrow {
 }
 
 .about-hero-ledger dt {
-  color: var(--muted);
-  font-size: 0.68rem;
+  color: var(--muted-2);
+  font-size: 0.6rem;
   font-weight: 760;
   letter-spacing: 0.11em;
   text-transform: uppercase;
@@ -2159,7 +2157,7 @@ a:hover .icon-arrow {
 .about-hero-ledger dd {
   margin: 0.25rem 0 0;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
 }
 
 .founder-layout {
@@ -2215,7 +2213,7 @@ a:hover .icon-arrow {
 .founder-lenses p {
   margin-top: 0.85rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
 }
 
 .orientation-feature-grid {
@@ -2260,8 +2258,8 @@ a:hover .icon-arrow {
   right: 1.5rem;
   bottom: 1.3rem;
   left: 1.5rem;
-  color: rgba(244, 239, 231, 0.84);
-  font-size: 0.68rem;
+  color: rgba(244, 239, 231, 0.72);
+  font-size: 0.61rem;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
@@ -2338,7 +2336,7 @@ a:hover .icon-arrow {
   display: block;
   margin-top: 0.2rem;
   color: var(--gold-500);
-  font-size: 0.72rem;
+  font-size: 0.67rem;
   font-weight: 780;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -2367,7 +2365,7 @@ a:hover .icon-arrow {
   padding-block: 0.65rem;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   text-decoration: none;
 }
 
@@ -2407,7 +2405,7 @@ a:hover .icon-arrow {
 .contact-prompts p {
   margin-top: 0.9rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
 }
 
 .contact-closing {
@@ -2541,7 +2539,7 @@ a:hover .icon-arrow {
   max-width: 34rem;
   margin-top: 1.3rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
 }
 
 .footer-grid {
@@ -2555,7 +2553,7 @@ a:hover .icon-arrow {
 .footer-heading {
   margin-bottom: 1rem;
   color: var(--gold-500);
-  font-size: 0.69rem;
+  font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -2569,7 +2567,7 @@ a:hover .icon-arrow {
 .footer-nav a {
   width: fit-content;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   text-decoration: none;
   transition: color var(--transition);
 }
@@ -2580,7 +2578,7 @@ a:hover .icon-arrow {
 
 .footer-positioning > p:last-child {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   line-height: 1.8;
 }
 
@@ -2590,8 +2588,8 @@ a:hover .icon-arrow {
   gap: 0.6rem 1.5rem;
   justify-content: space-between;
   padding-top: 1.4rem;
-  color: var(--muted);
-  font-size: 0.68rem;
+  color: var(--muted-2);
+  font-size: 0.61rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -2967,7 +2965,7 @@ a:hover .icon-arrow {
   }
 
   .brand-text small {
-    font-size: 0.58rem;
+    font-size: 0.49rem;
   }
 
   .hero-home-inner {
@@ -3408,7 +3406,7 @@ a:hover .icon-arrow {
   .not-found .button,
   .cta .button,
   .contact-closing .button {
-    font-size: 0.72rem;
+    font-size: 0.64rem;
   }
 
   .hero-image-frame {
