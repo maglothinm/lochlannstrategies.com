@@ -1,18 +1,22 @@
-# Lochlann Strategies v17.0.4 — Executive Visual System
+# Lochlann Strategies v17.1.0 — Cohesive Copy Revision
 
-This is the complete replacement release built from the v16.3.2 fixed-navigation baseline. It preserves the dark navy identity, crest, page URLs, core positioning, source imagery, SEO fundamentals, fixed navigation, and responsive behavior while rebuilding the visual hierarchy and interaction system.
+This release keeps the v17.0.4 visual system and responsive behavior while rewriting the site around one connected story: Michael Maglothin has defined requirements, led pursuits, built teams, and carried complex programs into delivery. Lochlann applies that full-lifecycle experience to help leadership teams choose the right work, win it credibly, and deliver what they promised.
 
-## What changed
+## v17.1.0 changes
 
-- Recast the site as a restrained, high-end executive advisory experience rather than a conventional consultant template.
-- Built a cinematic home hero with a clearer value proposition, operating arc, proof signals, and mission-facility imagery.
-- Gave Capabilities, Approach, Experience, About, and Contact distinct compositions instead of repeating the same card-and-copy pattern.
-- Added crest-derived contour fields, perspective grids, editorial dividers, controlled brass accents, and deeper image treatments.
-- Retained the fighter-hangar, advanced-manufacturing, mission-campus, and facility imagery while improving crop, contrast, and context.
-- Added subtle reveal motion, hover movement, scroll progress, pointer-responsive hero depth, and a reduced-motion fallback.
-- Rebuilt the mobile menu as a full remaining-viewport navigation layer beneath the fixed header, with page locking, focus containment, Escape handling, focus return, and an animated hamburger-to-X control.
-- Added a new social-share image, compact header crest asset, 32 px favicon, and Apple touch icon.
-- Preserved semantic HTML, one H1 and one main landmark per page, descriptive image text, canonical metadata, JSON-LD, sitemap, robots file, and GitHub Pages compatibility.
+- Rewrote all six principal pages in a more direct, professionally colloquial voice.
+- Gave each page one clear job: Home explains the value; Capabilities defines the work; Approach shows how an engagement runs; Experience proves the background; About tells the career story; Contact makes it easy to begin.
+- Replaced abstract phrases about operating systems, enterprise mobilization, bounded work, and delivery continuity with concrete language about customer needs, account choices, capture, teaming, ownership, site readiness, and delivery.
+- Brought Michael Maglothin’s government-customer, prime-contractor, capture, partner-team, and program-delivery experience forward across the site.
+- Standardized mobile navigation, calls to action, footer language, social metadata, and organization structured data.
+- Updated the 404 page with simpler language and correct no-index handling.
+- Added `sectors.html` as an immediate redirect to `experience.html`, replacing the obsolete public Sectors page without duplicating current content.
+- Updated every principal sitemap entry to August 12, 2026.
+
+## Visual and technical baseline
+
+- Preserves the v17.0.4 dark navy identity, crest, imagery, fixed navigation, mobile Safari fix, responsive behavior, reveal motion, accessibility features, and GitHub Pages compatibility.
+- Preserves one H1 and one main landmark per principal page, descriptive image text, canonical metadata, JSON-LD, sitemap, robots file, favicons, and social-share imagery.
 
 ## v17.0.4 revision
 
@@ -38,7 +42,7 @@ This is the complete replacement release built from the v16.3.2 fixed-navigation
 
 ## Deployment
 
-Upload the **contents of this directory** to the existing GitHub Pages repository root in one commit, replacing the prior website HTML and assets. Preserve any repository-only file that may exist outside the package, especially `CNAME`.
+Upload the **contents of this directory** to the existing GitHub Pages repository root in one commit, replacing the prior website HTML and assets. The new `sectors.html` file must be included so the obsolete live page is overwritten. Preserve any repository-only file that may exist outside the package, especially `CNAME`.
 
 The release-specific assets plus the `v=17.0.4` stylesheet cache key reduce the risk of Safari or GitHub Pages serving a mixed old/new cache state.
 

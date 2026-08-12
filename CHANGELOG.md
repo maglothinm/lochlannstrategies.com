@@ -1,5 +1,22 @@
 # Changelog
 
+## v17.1.0 — Cohesive Copy Revision
+
+### Changed
+
+- Rewrote all principal pages around one connected story from customer requirement through account choice, capture, teaming, and delivery.
+- Replaced abstract consulting shorthand with direct, concrete language and gave each page a distinct purpose.
+- Standardized navigation, calls to action, footers, social descriptions, and organization structured data.
+- Simplified the 404 page and updated sitemap modification dates.
+
+### Added
+
+- Added `sectors.html` as an immediate canonical redirect to Experience, replacing the obsolete public Sectors page.
+
+### Preserved
+
+- Preserved the complete v17.0.4 visual system, fixed navigation, mobile Safari correction, responsive behavior, imagery, assets, and GitHub Pages compatibility.
+
 ## v17.0.4 — Responsive Mission-Panel Correction
 
 ### Corrected

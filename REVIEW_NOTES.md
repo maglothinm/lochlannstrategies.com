@@ -1,57 +1,26 @@
-# Lochlann Strategies v17.0.2 — Review Notes
+# Lochlann Strategies v17.1.0 — Review Notes
 
-## Design intent
+## Editorial review
 
-- Predominantly dark navy, ink, slate, and restrained brass.
-- Serious aerospace, defense, critical-infrastructure, and executive-operating tone.
-- Editorial typography and cinematic imagery without theatrical animation or generic stock-consulting motifs.
-- Page-specific visual rhythm with shorter proof statements, clearer handoffs, and more deliberate whitespace.
-- No boardroom or handshake imagery and no public-facing use of the word “conceptual.”
+- Rewrote all six principal pages in a direct, professionally colloquial voice.
+- Gave each page a distinct role: Home states the value; Capabilities defines the work; Approach explains the engagement; Experience establishes the record; About tells the career story; Contact lowers the barrier to starting.
+- Replaced abstract consulting shorthand with concrete language about customer needs, account choices, capture, teaming, commercial decisions, site readiness, ownership, and delivery.
+- Kept prior roles separate from Lochlann client results and avoided unsupported outcome claims.
+- Added an initial-contact warning for classified, export-controlled, source-selection-sensitive, proprietary, and other restricted information.
 
-## Functional continuity
+## Technical continuity
 
-- Existing public URLs remain unchanged: Home, Capabilities, Approach, Experience, About, Contact, and 404.
-- Header remains fixed at the viewport top on every page.
-- Desktop navigation remains continuously available.
-- Mobile navigation opens below the fixed header and fills the remaining viewport.
-- Email, LinkedIn, internal navigation, favicon, social metadata, robots, sitemap, and GitHub Pages behavior are retained or upgraded.
-
-## Interaction and accessibility review
-
-- Animated hamburger transforms into a close control.
-- Mobile drawer reports itself as a modal navigation dialog.
-- Background content becomes inert while the drawer is open.
-- Keyboard focus enters the menu, can reach the close control, remains contained, and returns to the trigger after closing.
-- Escape closes the menu.
-- Body scrolling is locked until the closing transition completes.
-- Reduced-motion preferences disable nonessential animation.
-- Skip link, visible focus treatment, semantic landmarks, descriptive image alternatives, and balanced heading structure are retained.
+- Preserved the v17.0.4 visual system, images, stylesheet, JavaScript, responsive behavior, fixed header, mobile drawer, reveal motion, reduced-motion handling, and iPhone Safari content-panel fix.
+- Preserved the public Home, Capabilities, Approach, Experience, About, Contact, and 404 URLs.
+- Added `sectors.html` as an immediate canonical, no-index redirect to Experience so the obsolete public page no longer exposes legacy content.
 
 ## Acceptance tests completed
 
-- No horizontal overflow at 320, 375, 390, 430, 768, 960, 1024, or 1440 CSS pixels across all seven HTML pages.
-- Fixed-header position verified before and after scrolling at mobile and desktop widths on every page.
-- Mobile drawer dimensions, visibility, body lock, focus behavior, Escape behavior, and focus restoration verified in Chromium.
-- No browser console errors during the responsive and interaction suite.
-- No broken local page, stylesheet, script, image, icon, sitemap, or navigation references.
-- JSON-LD blocks parse successfully.
-- CSS parses without stylesheet errors; JavaScript passes Node syntax validation.
-- One `main`, one `h1`, one mobile drawer, and no duplicate IDs on every page.
-- No placeholder, TODO, lorem ipsum, boardroom, handshake, “conceptual,” or removed-employer text remains.
-- No targeting reticle is displayed over the Home facility image.
-
-## Files added or replaced
-
-- `assets/lochlann-v17.0.2.css`
-- `assets/lochlann-v17.0.2.js`
-- `assets/lochlann-share-preview-v17.jpg`
-- `assets/lochlann-crest-mark.webp`
-- `assets/strategic-contours.svg`
-- `assets/perspective-grid.svg`
-- `assets/favicon-32.png`
-- `assets/apple-touch-icon.png`
-
-## v17.0.2 content verification
-
-- Home and Experience show the requested order: U.S. Air Force, U.S. Department of Energy, Honeywell, GDIT, L3Harris.
-- No obsolete L3 employer naming remains.
+- Parsed every HTML page and confirmed one `main`, one `h1`, and no duplicate IDs on each rendered page.
+- Verified every local page, stylesheet, script, image, icon, and source reference.
+- Parsed all JSON-LD and the XML sitemap; confirmed matching descriptions across standard, Open Graph, and X metadata.
+- Rendered all principal pages plus 404 at 320, 390, 768, 1024, and 1440 CSS pixels with no horizontal overflow, broken images, fixed-header drift, or browser console errors.
+- Verified mobile-menu opening, focus entry, background inertness, Escape closing, body-scroll release, and focus restoration.
+- Inspected the revised desktop and mobile hero layouts plus the Home mission panel, Approach principle, Experience caption, About career section, and Contact card.
+- Confirmed the packaged visual assets are byte-for-byte identical to the v17.0.4 baseline.
+- Confirmed the obsolete Sectors URL is absent from the sitemap and redirects to Experience.
