@@ -1,49 +1,21 @@
-# Lochlann Strategies v17.1.0 — Cohesive Copy Revision
+# Lochlann Strategies v17.2.0 — Advanced Audit Update
 
-This release keeps the v17.0.4 visual system and responsive behavior while rewriting the site around one connected story: Michael Maglothin has defined requirements, led pursuits, built teams, and carried complex programs into delivery. Lochlann applies that full-lifecycle experience to help leadership teams choose the right work, win it credibly, and deliver what they promised.
+This release applies a live-site, visual, content, buyer-journey, competitive, mobile, accessibility, technical SEO, and social-sharing audit to the v17.1.0 baseline. It preserves the established design and focuses on the remaining high-value gap: a more ownable argument, clearer principal-led positioning, better mobile image delivery, and complete metadata alignment.
 
-## v17.1.0 changes
+## Principal changes
 
-- Rewrote all six principal pages in a more direct, professionally colloquial voice.
-- Gave each page one clear job: Home explains the value; Capabilities defines the work; Approach shows how an engagement runs; Experience proves the background; About tells the career story; Contact makes it easy to begin.
-- Replaced abstract phrases about operating systems, enterprise mobilization, bounded work, and delivery continuity with concrete language about customer needs, account choices, capture, teaming, ownership, site readiness, and delivery.
-- Brought Michael Maglothin’s government-customer, prime-contractor, capture, partner-team, and program-delivery experience forward across the site.
-- Standardized mobile navigation, calls to action, footer language, social metadata, and organization structured data.
-- Updated the 404 page with simpler language and correct no-index handling.
-- Added `sectors.html` as an immediate redirect to `experience.html`, replacing the obsolete public Sectors page without duplicating current content.
-- Updated every principal sitemap entry to August 12, 2026.
+- Home now centers the idea that separate account, capture, teaming, pricing, readiness, and delivery decisions become one customer promise.
+- Michael Maglothin’s direct leadership of every Lochlann engagement is explicit.
+- The lifecycle visual and steps are framed as the need-to-delivery arc.
+- The stale social-share asset is replaced with the current “Choose the right work. Win it. Deliver it.” message.
+- Mobile image derivatives, responsive image candidates, and responsive preload/background rules reduce unnecessary mobile transfer.
+- Selected microtype is more readable without disturbing the editorial hierarchy.
+- Structured data now connects the organization, website, primary image, advisory service, capability catalog, pages, and founder.
 
-## Visual and technical baseline
-
-- Preserves the v17.0.4 dark navy identity, crest, imagery, fixed navigation, mobile Safari fix, responsive behavior, reveal motion, accessibility features, and GitHub Pages compatibility.
-- Preserves one H1 and one main landmark per principal page, descriptive image text, canonical metadata, JSON-LD, sitemap, robots file, favicons, and social-share imagery.
-
-## v17.0.4 revision
-
-- Corrected the homepage Mission + Built Environment panel so the eyebrow and opening words cannot be clipped by the shaped frame on iPhone Safari or intermediate viewport widths.
-- Made the panel height content-driven while preserving the desktop composition, image treatment, and clipped-corner geometry.
-- Reduced excessive mobile headline wrapping and updated the stylesheet cache key to `v=17.0.4`.
-
-## v17.0.3 revision
-
-- Strengthened Michael Maglothin name-search relevance through the About-page title and H1, founder references, linked Person/Organization structured data, and sitemap updates.
-
-## v17.0.2 revision
-
-- Added U.S. Department of Energy between U.S. Air Force and Honeywell in both selected operating-environments presentations.
-- Corrected the L3 employer name to L3Harris.
-- Rebalanced the presentation for five entries, including a three-plus-two tablet layout and a one-column mobile layout.
-
-## v17.0.1 revision
-
-- Removed every public-facing reference to the requested prior employer.
-- Removed the targeting reticle from the Home facility image.
-- Rebalanced the selected operating-environments row for four organizations.
+See `ADVANCED_AUDIT-v17.2.0.md` for the full findings and scorecard, `CHANGELOG-v17.2.0.md` for the exact release changes, and `TEST_REPORT-v17.2.0.md` for final validation.
 
 ## Deployment
 
-Upload the **contents of this directory** to the existing GitHub Pages repository root in one commit, replacing the prior website HTML and assets. The new `sectors.html` file must be included so the obsolete live page is overwritten. Preserve any repository-only file that may exist outside the package, especially `CNAME`.
+Upload the **contents of this directory** to the existing GitHub Pages repository root in one commit, replacing the prior site files. Include `sectors.html`. Preserve any repository-only `CNAME` file.
 
-The release-specific assets plus the `v=17.0.4` stylesheet cache key reduce the risk of Safari or GitHub Pages serving a mixed old/new cache state.
-
-No build process, package manager, external font service, JavaScript framework, or third-party runtime dependency is required.
+The v17.2.0 filenames and query strings are intentional cache busters. No build process, package manager, external font service, JavaScript framework, or third-party runtime dependency is required.

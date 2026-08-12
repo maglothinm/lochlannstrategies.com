@@ -1,0 +1,11 @@
+LOCHLANN STRATEGIES v17.2.0 — DEPLOYMENT
+
+1. Upload the contents of this package to the existing GitHub Pages repository root.
+2. Replace prior HTML, sitemap, robots, documentation, and packaged assets.
+3. Include sectors.html so the obsolete Sectors URL continues to redirect to Experience.
+4. Preserve any repository-only CNAME file.
+5. Commit and wait for GitHub Pages to publish the update.
+6. After publication, open Home, Capabilities, Approach, Experience, About, and Contact in a private browser window.
+7. Share one page into a social-preview debugger or messaging app after cache propagation to confirm the new v17.2 card.
+
+The new versioned asset names are intentional and should not be renamed.

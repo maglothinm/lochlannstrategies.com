@@ -1,26 +1,30 @@
-# Lochlann Strategies v17.1.0 — Review Notes
+# Lochlann Strategies v17.2.0 — Review Notes
 
-## Editorial review
+## Audit scope
 
-- Rewrote all six principal pages in a direct, professionally colloquial voice.
-- Gave each page a distinct role: Home states the value; Capabilities defines the work; Approach explains the engagement; Experience establishes the record; About tells the career story; Contact lowers the barrier to starting.
-- Replaced abstract consulting shorthand with concrete language about customer needs, account choices, capture, teaming, commercial decisions, site readiness, ownership, and delivery.
-- Kept prior roles separate from Lochlann client results and avoided unsupported outcome claims.
-- Added an initial-contact warning for classified, export-controlled, source-selection-sensitive, proprietary, and other restricted information.
+- Current live-site review and current-source inspection.
+- Desktop, tablet, and mobile visual review.
+- Positioning, differentiation, stakeholder journey, conversion, proof, and memorability review.
+- Competitive benchmark against operator-led, defense/federal, growth/capture, and aerospace advisory firms.
+- HTML, CSS, JavaScript, imagery, social metadata, structured data, sitemap, robots, and accessibility-oriented interaction review.
 
-## Technical continuity
+## Editorial decisions
 
-- Preserved the v17.0.4 visual system, images, stylesheet, JavaScript, responsive behavior, fixed header, mobile drawer, reveal motion, reduced-motion handling, and iPhone Safari content-panel fix.
-- Preserved the public Home, Capabilities, Approach, Experience, About, Contact, and 404 URLs.
-- Added `sectors.html` as an immediate canonical, no-index redirect to Experience so the obsolete public page no longer exposes legacy content.
+- Kept the v17.1.0 direct, professionally colloquial voice.
+- Elevated the strongest differentiator instead of adding generic marketing claims.
+- Made the principal-led delivery model explicit.
+- Kept prior-employer experience distinct from Lochlann client results.
+- Added no unsupported metrics, testimonials, or case claims.
 
-## Acceptance tests completed
+## Technical changes
 
-- Parsed every HTML page and confirmed one `main`, one `h1`, and no duplicate IDs on each rendered page.
-- Verified every local page, stylesheet, script, image, icon, and source reference.
-- Parsed all JSON-LD and the XML sitemap; confirmed matching descriptions across standard, Open Graph, and X metadata.
-- Rendered all principal pages plus 404 at 320, 390, 768, 1024, and 1440 CSS pixels with no horizontal overflow, broken images, fixed-header drift, or browser console errors.
-- Verified mobile-menu opening, focus entry, background inertness, Escape closing, body-scroll release, and focus restoration.
-- Inspected the revised desktop and mobile hero layouts plus the Home mission panel, Approach principle, Experience caption, About career section, and Contact card.
-- Confirmed the packaged visual assets are byte-for-byte identical to the v17.0.4 baseline.
-- Confirmed the obsolete Sectors URL is absent from the sitemap and redirects to Experience.
+- New `lochlann-v17.2.0.css` and `lochlann-v17.2.0.js`.
+- New current social-share image.
+- New 960-pixel mobile WebP derivatives for the three 1800-pixel facility/campus images.
+- Responsive `srcset`, `sizes`, preloads, and CSS image overrides.
+- Expanded linked JSON-LD graph and principal-page robots metadata.
+- Intrinsic dimensions on every local raster image.
+
+## Acceptance tests
+
+See `TEST_REPORT-v17.2.0.md` for the automated and rendered test results completed after this build.
