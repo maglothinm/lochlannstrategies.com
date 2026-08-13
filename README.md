@@ -1,16 +1,19 @@
-# Lochlann Strategies v17.2.1 — Value-Filter Correction
+# Lochlann Strategies v17.2.2 — Company-First Home Hero
 
-This corrective release starts from v17.2.0 and removes the Home-page circular operating map after a stricter component-level value review. The graphic was technically functional but did not improve comprehension, establish proof, differentiate Lochlann, guide the visitor, or justify the space it consumed—especially when it appeared as a dominant desktop-style element in iPhone landscape orientation.
+This release starts from v17.2.1 and corrects the Home-page message hierarchy without changing the established visual system or restoring the removed operating-map graphic.
 
-## Corrective decision
+## Home-page correction
 
-- The operating map is removed.
-- Its duplicate explanatory paragraph is also removed.
-- Nothing decorative replaces either element.
-- The useful section thesis and four practical decision-to-delivery steps remain.
-- Shared CSS and JavaScript are versioned as v17.2.1 for reliable cache invalidation.
+- Keeps “Choose the right work. Win it. Deliver it.” as the hero headline.
+- Introduces Lochlann Strategies and the situations in which clients hire it before introducing the founder.
+- Retains Michael Maglothin prominently above the fold as the direct lead for every engagement.
+- Separates the company proposition from the principal-credibility statement for faster scanning.
+- Makes `See capabilities` the primary action and `Explore the experience` the secondary action.
+- Shortens the mobile opening and reduces excess top spacing so the actions appear sooner.
+- Aligns the Home meta description, Open Graph description, X description, and WebPage schema with the company-first framing while preserving the existing Person and founder signals.
+- Versions the shared stylesheet as v17.2.2 for reliable cache invalidation. The JavaScript remains v17.2.1 because its behavior is unchanged.
 
-See `AUDIT_CORRECTION-v17.2.1.md` for the value-added assessment, `CHANGELOG-v17.2.1.md` for the exact changes, and `TEST_REPORT-v17.2.1.md` for final validation. The original `ADVANCED_AUDIT-v17.2.0.md` remains in the package as the historical baseline and should be read together with the correction.
+The v17.2.1 value-filter correction remains intact: the circular operating map and its duplicate explanatory copy are still removed without replacement.
 
 ## Deployment
 

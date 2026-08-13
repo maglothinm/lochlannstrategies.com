@@ -1,0 +1,401 @@
+{
+  "results": [
+    {
+      "name": "iphone-portrait",
+      "width": 393,
+      "height": 852,
+      "errors": [],
+      "metrics": {
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "document": {
+          "clientWidth": 393,
+          "scrollWidth": 393,
+          "scrollHeight": 8620
+        },
+        "h1": {
+          "top": 180,
+          "right": 374,
+          "bottom": 390,
+          "left": 19,
+          "width": 355,
+          "height": 210,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "56.985px"
+        },
+        "companyCopy": {
+          "top": 417,
+          "right": 374,
+          "bottom": 553,
+          "left": 19,
+          "width": 355,
+          "height": 136,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(184, 197, 198)",
+          "fontSize": "17.28px"
+        },
+        "principalCopy": {
+          "top": 567,
+          "right": 374,
+          "bottom": 666,
+          "left": 19,
+          "width": 355,
+          "height": 99,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(135, 157, 160)",
+          "fontSize": "15.8976px"
+        },
+        "actions": {
+          "top": 695,
+          "right": 374,
+          "bottom": 808,
+          "left": 19,
+          "width": 355,
+          "height": 114,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "15.36px"
+        },
+        "primaryAction": {
+          "top": 695,
+          "right": 374,
+          "bottom": 745,
+          "left": 19,
+          "width": 355,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(3, 16, 24)",
+          "fontSize": "10.24px"
+        },
+        "heroCopy": {
+          "top": 130,
+          "right": 374,
+          "bottom": 808,
+          "left": 19,
+          "width": 355,
+          "height": 679,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "15.36px"
+        },
+        "heroText": "STRATEGIC ACCOUNTS · MAJOR PURSUITS · COMPLEX DELIVERY\n\nChoose the right work.\nWin it. Deliver it.\n\nLochlann Strategies provides senior advisory and hands-on leadership for strategic accounts, major pursuits, prime and OEM partnerships, and transitions into delivery.\n\nEvery engagement is led directly by Michael Maglothin. His 25+ years span government requirements, prime integration, growth and capture, and complex program delivery.\n\nSEE CAPABILITIES\nEXPLORE THE EXPERIENCE",
+        "primaryText": "SEE CAPABILITIES",
+        "secondaryText": "EXPLORE THE EXPERIENCE",
+        "bodyOverflowX": "hidden",
+        "operatingMapCount": 0
+      }
+    },
+    {
+      "name": "iphone-landscape",
+      "width": 852,
+      "height": 393,
+      "errors": [],
+      "metrics": {
+        "viewport": {
+          "width": 852,
+          "height": 393
+        },
+        "document": {
+          "clientWidth": 852,
+          "scrollWidth": 852,
+          "scrollHeight": 6676
+        },
+        "h1": {
+          "top": 211,
+          "right": 630,
+          "bottom": 555,
+          "left": 34,
+          "width": 596,
+          "height": 345,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "93.72px"
+        },
+        "companyCopy": {
+          "top": 583,
+          "right": 738,
+          "bottom": 665,
+          "left": 34,
+          "width": 704,
+          "height": 82,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(184, 197, 198)",
+          "fontSize": "17.28px"
+        },
+        "principalCopy": {
+          "top": 678,
+          "right": 738,
+          "bottom": 728,
+          "left": 34,
+          "width": 704,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(135, 157, 160)",
+          "fontSize": "15.8976px"
+        },
+        "actions": {
+          "top": 764,
+          "right": 818,
+          "bottom": 815,
+          "left": 34,
+          "width": 784,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "16px"
+        },
+        "primaryAction": {
+          "top": 764,
+          "right": 240,
+          "bottom": 815,
+          "left": 34,
+          "width": 206,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(3, 16, 24)",
+          "fontSize": "11.36px"
+        },
+        "heroCopy": {
+          "top": 176,
+          "right": 818,
+          "bottom": 815,
+          "left": 34,
+          "width": 784,
+          "height": 639,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "16px"
+        },
+        "heroText": "STRATEGIC ACCOUNTS · MAJOR PURSUITS · COMPLEX DELIVERY\n\nChoose the right work.\nWin it. Deliver it.\n\nLochlann Strategies provides senior advisory and hands-on leadership for strategic accounts, major pursuits, prime and OEM partnerships, and transitions into delivery.\n\nEvery engagement is led directly by Michael Maglothin. His 25+ years span government requirements, prime integration, growth and capture, and complex program delivery.\n\nSEE CAPABILITIES\nEXPLORE THE EXPERIENCE",
+        "primaryText": "SEE CAPABILITIES",
+        "secondaryText": "EXPLORE THE EXPERIENCE",
+        "bodyOverflowX": "hidden",
+        "operatingMapCount": 0
+      }
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "errors": [],
+      "metrics": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "document": {
+          "clientWidth": 768,
+          "scrollWidth": 768,
+          "scrollHeight": 6625
+        },
+        "h1": {
+          "top": 200,
+          "right": 568,
+          "bottom": 511,
+          "left": 31,
+          "width": 537,
+          "height": 311,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "84.48px"
+        },
+        "companyCopy": {
+          "top": 539,
+          "right": 735,
+          "bottom": 620,
+          "left": 31,
+          "width": 704,
+          "height": 82,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(184, 197, 198)",
+          "fontSize": "17.28px"
+        },
+        "principalCopy": {
+          "top": 634,
+          "right": 735,
+          "bottom": 684,
+          "left": 31,
+          "width": 704,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(135, 157, 160)",
+          "fontSize": "15.8976px"
+        },
+        "actions": {
+          "top": 720,
+          "right": 737,
+          "bottom": 771,
+          "left": 31,
+          "width": 707,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "16px"
+        },
+        "primaryAction": {
+          "top": 720,
+          "right": 237,
+          "bottom": 771,
+          "left": 31,
+          "width": 206,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(3, 16, 24)",
+          "fontSize": "11.36px"
+        },
+        "heroCopy": {
+          "top": 166,
+          "right": 737,
+          "bottom": 771,
+          "left": 31,
+          "width": 707,
+          "height": 605,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "16px"
+        },
+        "heroText": "STRATEGIC ACCOUNTS · MAJOR PURSUITS · COMPLEX DELIVERY\n\nChoose the right work.\nWin it. Deliver it.\n\nLochlann Strategies provides senior advisory and hands-on leadership for strategic accounts, major pursuits, prime and OEM partnerships, and transitions into delivery.\n\nEvery engagement is led directly by Michael Maglothin. His 25+ years span government requirements, prime integration, growth and capture, and complex program delivery.\n\nSEE CAPABILITIES\nEXPLORE THE EXPERIENCE",
+        "primaryText": "SEE CAPABILITIES",
+        "secondaryText": "EXPLORE THE EXPERIENCE",
+        "bodyOverflowX": "hidden",
+        "operatingMapCount": 0
+      }
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "errors": [],
+      "metrics": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "document": {
+          "clientWidth": 1440,
+          "scrollWidth": 1440,
+          "scrollHeight": 6009
+        },
+        "h1": {
+          "top": 220,
+          "right": 624,
+          "bottom": 596,
+          "left": 80,
+          "width": 544,
+          "height": 376,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "102.24px"
+        },
+        "companyCopy": {
+          "top": 624,
+          "right": 624,
+          "bottom": 753,
+          "left": 80,
+          "width": 544,
+          "height": 129,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(184, 197, 198)",
+          "fontSize": "20.48px"
+        },
+        "principalCopy": {
+          "top": 767,
+          "right": 624,
+          "bottom": 884,
+          "left": 80,
+          "width": 544,
+          "height": 118,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(135, 157, 160)",
+          "fontSize": "18.8416px"
+        },
+        "actions": {
+          "top": 921,
+          "right": 624,
+          "bottom": 971,
+          "left": 80,
+          "width": 544,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "16px"
+        },
+        "primaryAction": {
+          "top": 921,
+          "right": 286,
+          "bottom": 971,
+          "left": 80,
+          "width": 206,
+          "height": 50,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(3, 16, 24)",
+          "fontSize": "11.36px"
+        },
+        "heroCopy": {
+          "top": 170,
+          "right": 624,
+          "bottom": 971,
+          "left": 80,
+          "width": 544,
+          "height": 801,
+          "opacity": "1",
+          "visibility": "visible",
+          "color": "rgb(242, 238, 231)",
+          "fontSize": "16px"
+        },
+        "heroText": "STRATEGIC ACCOUNTS · MAJOR PURSUITS · COMPLEX DELIVERY\n\nChoose the right work.\nWin it. Deliver it.\n\nLochlann Strategies provides senior advisory and hands-on leadership for strategic accounts, major pursuits, prime and OEM partnerships, and transitions into delivery.\n\nEvery engagement is led directly by Michael Maglothin. His 25+ years span government requirements, prime integration, growth and capture, and complex program delivery.\n\nSEE CAPABILITIES\nEXPLORE THE EXPERIENCE",
+        "primaryText": "SEE CAPABILITIES",
+        "secondaryText": "EXPLORE THE EXPERIENCE",
+        "bodyOverflowX": "hidden",
+        "operatingMapCount": 0
+      }
+    }
+  ],
+  "interaction": {
+    "menuOpen": {
+      "expanded": "true",
+      "hidden": false,
+      "bodyClass": "page-home menu-open",
+      "focusedText": "01Home"
+    },
+    "menuClosed": {
+      "expanded": "false",
+      "hidden": true,
+      "bodyClass": "page-home"
+    },
+    "orientation": {
+      "width": 852,
+      "height": 393,
+      "clientWidth": 852,
+      "scrollWidth": 852,
+      "menuExpanded": "false",
+      "menuHidden": true
+    }
+  }
+}
