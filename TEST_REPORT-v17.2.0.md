@@ -1,3 +1,5 @@
+> **Historical report:** Superseded for deployment by `TEST_REPORT-v17.2.1.md`. The v17.2.1 correction adds the missing component-value review and orientation-change regression coverage.
+
 # Lochlann Strategies v17.2.0 — Test Report
 
 **Test date:** August 12, 2026  

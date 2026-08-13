@@ -1,30 +1,20 @@
-# Lochlann Strategies v17.2.0 — Review Notes
+# Lochlann Strategies v17.2.1 — Review Notes
 
-## Audit scope
+## Reason for release
 
-- Current live-site review and current-source inspection.
-- Desktop, tablet, and mobile visual review.
-- Positioning, differentiation, stakeholder journey, conversion, proof, and memorability review.
-- Competitive benchmark against operator-led, defense/federal, growth/capture, and aerospace advisory firms.
-- HTML, CSS, JavaScript, imagery, social metadata, structured data, sitemap, robots, and accessibility-oriented interaction review.
+A real iPhone Safari orientation change exposed the Home-page circular operating map at a wide, short landscape breakpoint. That revealed both a responsive-test gap and a more important editorial problem: the component did not add enough value to remain.
 
-## Editorial decisions
+## Applied correction
 
-- Kept the v17.1.0 direct, professionally colloquial voice.
-- Elevated the strongest differentiator instead of adding generic marketing claims.
-- Made the principal-led delivery model explicit.
-- Kept prior-employer experience distinct from Lochlann client results.
-- Added no unsupported metrics, testimonials, or case claims.
+The map and its duplicate explanatory copy were deleted without replacement. The section now moves directly from “The customer hears one promise” to the four concrete steps. This is a subtraction release, not a redesign.
 
-## Technical changes
+## Files changed
 
-- New `lochlann-v17.2.0.css` and `lochlann-v17.2.0.js`.
-- New current social-share image.
-- New 960-pixel mobile WebP derivatives for the three 1800-pixel facility/campus images.
-- Responsive `srcset`, `sizes`, preloads, and CSS image overrides.
-- Expanded linked JSON-LD graph and principal-page robots metadata.
-- Intrinsic dimensions on every local raster image.
+- `index.html`
+- `assets/lochlann-v17.2.1.css`
+- `assets/lochlann-v17.2.1.js`
+- Shared HTML asset references
+- `sitemap.xml`
+- Release, audit-correction, deployment, and test documentation
 
-## Acceptance tests
-
-See `TEST_REPORT-v17.2.0.md` for the automated and rendered test results completed after this build.
+See `AUDIT_CORRECTION-v17.2.1.md` and `TEST_REPORT-v17.2.1.md`.

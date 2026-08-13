@@ -1,0 +1,11 @@
+LOCHLANN STRATEGIES v17.2.1 — DEPLOYMENT
+
+1. Upload the contents of this package to the existing GitHub Pages repository root.
+2. Replace prior HTML, sitemap, robots, documentation, and packaged assets.
+3. Include sectors.html so the obsolete Sectors URL continues to redirect to Experience.
+4. Preserve any repository-only CNAME file.
+5. Commit and wait for GitHub Pages to publish the update.
+6. Open the Home page in a private Safari window in both portrait and landscape orientation.
+7. Confirm that the page moves directly from “The customer hears one promise” to the four practical steps and that the circular map does not appear at any orientation.
+
+The v17.2.1 CSS and JavaScript filenames are intentional cache busters and should not be renamed.

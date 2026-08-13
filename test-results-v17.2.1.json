@@ -1,0 +1,489 @@
+{
+  "release": "17.2.1",
+  "test_date": "2026-08-13",
+  "static": {
+    "html_files": 8,
+    "css_parse_errors": 0,
+    "removed_component_absent": true,
+    "retained_steps_present": true,
+    "errors": []
+  },
+  "browser": [
+    {
+      "engine": "Chromium",
+      "page": "index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 8331,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 1350.203125,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "services.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Capabilities | Lochlann Strategies",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 6746,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "engagements.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Approach | Lochlann Strategies",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 6813,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "experience.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Experience | Lochlann Strategies",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 7551,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "about.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Michael Maglothin | Founder, Lochlann Strategies",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 6832,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "contact.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Contact Michael Maglothin | Lochlann Strategies",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 4022,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "404.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Page Not Found | Lochlann Strategies",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 1789,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 5760,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 838.59375,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "services.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Capabilities | Lochlann Strategies",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 4522,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "engagements.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Approach | Lochlann Strategies",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 5069,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "experience.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Experience | Lochlann Strategies",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 5867,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "about.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Michael Maglothin | Founder, Lochlann Strategies",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 4964,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "contact.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Contact Michael Maglothin | Lochlann Strategies",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 2903,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "404.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Page Not Found | Lochlann Strategies",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 1461,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 0,
+      "sectionHeight": null,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "index.html",
+      "viewport": {
+        "width": 320,
+        "height": 700
+      },
+      "mobile": true,
+      "label": null,
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "scrollHeight": 8610,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 1467.59375,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "index.html",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 6450,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 917.484375,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium",
+      "page": "index.html",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "mobile": false,
+      "label": null,
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "scrollHeight": 4889,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 711.328125,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium iPhone emulation",
+      "page": "index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobile": true,
+      "label": "iPhone portrait",
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 8332,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 1350.203125,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium iPhone emulation",
+      "page": "index.html",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mobile": true,
+      "label": "iPhone landscape",
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 844,
+      "clientWidth": 844,
+      "scrollHeight": 6546,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 917.484375,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium iPhone emulation",
+      "page": "index.html",
+      "viewport": {
+        "width": 852,
+        "height": 393
+      },
+      "mobile": true,
+      "label": "wide iPhone landscape",
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 852,
+      "clientWidth": 852,
+      "scrollHeight": 6556,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 917.484375,
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "Chromium iPhone emulation",
+      "page": "index.html",
+      "viewport": {
+        "width": 932,
+        "height": 430
+      },
+      "mobile": true,
+      "label": "max iPhone landscape",
+      "title": "Lochlann Strategies | Strategic Accounts, Capture & Delivery",
+      "scrollWidth": 932,
+      "clientWidth": 932,
+      "scrollHeight": 6591,
+      "mapCount": 0,
+      "oldTextCount": 0,
+      "brokenImages": [],
+      "stepCount": 4,
+      "sectionHeight": 926.421875,
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  ],
+  "orientation_change": {
+    "before": {
+      "x": 0,
+      "y": 2228,
+      "w": 390,
+      "h": 844,
+      "map": 0
+    },
+    "after": {
+      "x": 0,
+      "y": 2228,
+      "w": 844,
+      "h": 390,
+      "map": 0,
+      "oldText": false,
+      "overflow": 0,
+      "steps": 4,
+      "heading": "The customer hears one promise.",
+      "firstStep": "Test the opportunity"
+    },
+    "menu": {
+      "expanded": "true",
+      "hidden": false,
+      "activeInside": true,
+      "mainInert": true,
+      "afterEscapeExpanded": "false"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "limitations": [
+    "Rendered tests used system Chromium with iPhone-style viewport, touch, scale, and Safari user-agent emulation.",
+    "A native iOS Safari/WebKit binary was not available in the container; final device confirmation remains required."
+  ],
+  "pass": true
+}

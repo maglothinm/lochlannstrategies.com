@@ -1,3 +1,5 @@
+> **v17.2.1 correction:** The audit did not apply a sufficiently strict component-level value test to the Home-page circular operating map. A subsequent iPhone Safari landscape observation exposed the responsive gap and prompted a substantive reassessment. The map and its duplicate explanatory copy were removed without replacement. See `AUDIT_CORRECTION-v17.2.1.md`.
+
 # Lochlann Strategies — Advanced Website Audit
 
 **Audit date:** August 12, 2026  
