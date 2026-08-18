@@ -1,0 +1,301 @@
+/* ==========================================================================
+   Lochlann Strategies — v17.4.0 executive career evidence
+   Supplemental styles only. The v17.2.2 base visual system remains intact.
+   ========================================================================== */
+
+.executive-background-section,
+.career-outcomes-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.executive-background-section::before,
+.career-outcomes-section::before {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(217, 184, 120, 0.08), transparent 28rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.018), transparent 42%);
+  content: "";
+  pointer-events: none;
+}
+
+.executive-background-section > .container,
+.career-outcomes-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.executive-background-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.72fr) minmax(0, 1.35fr);
+  gap: clamp(2.8rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.executive-background-intro {
+  position: sticky;
+  top: calc(var(--header-height) + 2rem);
+}
+
+.executive-background-intro h2 {
+  max-width: 10ch;
+  margin-top: 1.1rem;
+}
+
+.executive-background-intro .lead {
+  max-width: 31rem;
+  margin-top: 1.4rem;
+}
+
+.career-timeline {
+  border-top: 1px solid var(--gold-line);
+}
+
+.career-timeline article {
+  display: grid;
+  grid-template-columns: minmax(6.5rem, 8.25rem) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2.25rem);
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.career-period {
+  padding-top: 0.2rem;
+  color: var(--gold-500);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.career-role {
+  min-width: 0;
+}
+
+.career-role h3 {
+  font-size: clamp(1.25rem, 1.9vw, 1.65rem);
+  line-height: 1.12;
+}
+
+.career-organization {
+  margin-top: 0.48rem;
+  color: var(--gold-400);
+  font-size: 0.76rem;
+  font-weight: 760;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.career-role p:last-child {
+  max-width: 47rem;
+  margin-top: 0.75rem;
+  color: var(--muted);
+}
+
+.executive-track-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: end;
+  margin-top: clamp(4rem, 7vw, 6.5rem);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gold-line);
+}
+
+.executive-track-heading h2 {
+  max-width: 12ch;
+}
+
+.executive-track-heading .lead {
+  max-width: 47rem;
+  justify-self: end;
+}
+
+.executive-track-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.executive-track-grid article {
+  min-width: 0;
+  padding: clamp(2rem, 4vw, 3.5rem) clamp(1.3rem, 3vw, 2.5rem);
+  border-left: 1px solid var(--line);
+}
+
+.executive-track-grid article:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.executive-track-grid article:last-child {
+  padding-right: 0;
+}
+
+.executive-track-grid h3 {
+  max-width: 15ch;
+  margin-top: 1.2rem;
+}
+
+.executive-track-grid p:last-child {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.executive-background-link {
+  margin-top: 2.2rem;
+}
+
+.career-outcomes-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: end;
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--gold-line);
+}
+
+.career-outcomes-heading h2 {
+  max-width: 11ch;
+  margin-top: 1rem;
+}
+
+.career-outcomes-heading .lead {
+  max-width: 48rem;
+  justify-self: end;
+}
+
+.career-outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.career-outcome-card {
+  min-width: 0;
+  padding: clamp(2.2rem, 4vw, 3.7rem) clamp(1.35rem, 3vw, 2.6rem);
+  border-left: 1px solid var(--line);
+}
+
+.career-outcome-card:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.career-outcome-card:last-child {
+  padding-right: 0;
+}
+
+.career-outcome-card .card-kicker {
+  margin-top: 1.1rem;
+}
+
+.career-outcome-card h3 {
+  max-width: 15ch;
+  margin-top: 0.8rem;
+}
+
+.career-outcome-card > p:last-of-type {
+  margin-top: 1.1rem;
+  color: var(--muted);
+}
+
+.outcome-metrics {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.6rem;
+  list-style: none;
+}
+
+.outcome-metrics li {
+  display: grid;
+  grid-template-columns: minmax(4.4rem, auto) minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: baseline;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.outcome-metrics strong {
+  color: var(--gold-400);
+  font-family: var(--display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.outcome-metrics span {
+  color: var(--muted-2);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.career-outcomes-section .evidence-note {
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 1020px) {
+  .executive-background-layout,
+  .executive-track-heading,
+  .career-outcomes-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .executive-background-intro {
+    position: static;
+  }
+
+  .executive-background-intro h2,
+  .executive-track-heading h2,
+  .career-outcomes-heading h2 {
+    max-width: 16ch;
+  }
+
+  .executive-track-heading .lead,
+  .career-outcomes-heading .lead {
+    justify-self: start;
+  }
+
+  .executive-track-grid,
+  .career-outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .executive-track-grid article,
+  .executive-track-grid article:first-child,
+  .executive-track-grid article:last-child,
+  .career-outcome-card,
+  .career-outcome-card:first-child,
+  .career-outcome-card:last-child {
+    padding: 2rem 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .executive-track-grid article:first-child,
+  .career-outcome-card:first-child {
+    border-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .career-timeline article {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .career-period {
+    padding-top: 0;
+  }
+
+  .executive-track-heading {
+    margin-top: 3.5rem;
+  }
+
+  .outcome-metrics li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
