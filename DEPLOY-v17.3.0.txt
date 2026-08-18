@@ -1,0 +1,14 @@
+LOCHLANN STRATEGIES v17.3.0 — DEPLOYMENT
+
+1. Upload the contents of this package to the existing GitHub Pages repository root.
+2. Replace prior HTML, sitemap, robots, documentation, and packaged assets.
+3. Include sectors.html so the obsolete Sectors URL continues to redirect to Experience.
+4. Preserve any repository-only CNAME file.
+5. Commit and wait for GitHub Pages to publish the update.
+6. Open the Home page in a private Safari window in portrait and landscape orientation.
+7. Confirm that the Home eyebrow reads “Growth strategy · Capture · Execution.”
+8. Confirm that the hero introduces Lochlann first, keeps Michael Maglothin above the fold, and shows `See capabilities` as the primary action.
+9. Confirm that Capabilities begins with “Growth Strategy & Portfolio Choices” and contains no strategic-account or OEM-led positioning.
+10. Confirm that Home, Capabilities, Experience, About, and Contact show no clipping or horizontal overflow.
+
+The v17.2.2 CSS filename and query string remain intentional and unchanged. The JavaScript remains v17.2.1 because behavior did not change.

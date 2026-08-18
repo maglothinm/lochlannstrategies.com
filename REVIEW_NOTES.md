@@ -1,23 +1,31 @@
-# Lochlann Strategies v17.2.2 — Review Notes
+# Lochlann Strategies v17.3.0 — Review Notes
 
 ## Reason for release
 
-The Home headline established a company-level promise, but its first explanatory sentence began with Michael Maglothin. That sequence made the opening feel like a personal profile before the visitor had been told what Lochlann provides or when to hire it.
+The site’s visual quality and company-first hierarchy were strong, but its identity had become too closely aligned with a single corporate account-growth role. Repetition of strategic accounts, prime/OEM relationships, internal business lines, mission facilities, and the built environment narrowed both the advisory proposition and Michael Maglothin’s broader experience.
 
 ## Applied correction
 
-The hero now makes Lochlann the proposition and Michael the reason to believe it. His full name remains above the fold, direct principal leadership remains explicit, and the existing SEO entity signals remain in place. The shorter two-part message and tighter mobile spacing also bring the first action closer to the initial viewport.
+The revision keeps Lochlann as the opening proposition and Michael as the reason to believe it. It broadens the firm’s identity to growth strategy, market entry, capture, partner development, growth operations, and complex execution. Defense, security, infrastructure, facilities, and operational technology remain visible as evidence and markets served rather than controlling the entire narrative.
 
-## Files changed
+## Deliberate boundaries
+
+- The site does not reference or signal a particular prospective employer.
+- Michael’s full name remains above the fold for credibility and search visibility.
+- Selected prior organizations remain as experience proof with a no-affiliation statement.
+- The established imagery remains because it supports defense, security, infrastructure, and operational-technology credibility without requiring employer-specific language.
+- No CSS, JavaScript, navigation, or page-architecture changes were needed.
+
+## Principal files changed
 
 - `index.html`
-- `assets/lochlann-v17.2.2.css`
-- Shared HTML stylesheet references
-- `README.md`
-- `CHANGELOG.md`
-- `CHANGELOG-v17.2.2.md`
-- `DEPLOY-v17.2.2.txt`
-- `TEST_REPORT-v17.2.2.md`
-- `test-results-v17.2.2.json`
+- `services.html`
+- `engagements.html`
+- `experience.html`
+- `about.html`
+- `contact.html`
+- `404.html`
+- `sitemap.xml`
+- Release documentation and test records
 
-The v17.2.1 audit correction and historical test materials remain in the package.
+Historical changelogs, audits, and test materials remain in the package.

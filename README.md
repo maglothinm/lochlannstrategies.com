@@ -1,19 +1,25 @@
-# Lochlann Strategies v17.2.2 — Company-First Home Hero
+# Lochlann Strategies v17.3.0 — Broader Growth Positioning
 
-This release starts from v17.2.1 and corrects the Home-page message hierarchy without changing the established visual system or restoring the removed operating-map graphic.
+This release starts from v17.2.2 and removes the site’s single-employer-aligned emphasis on strategic-account portfolios, prime/OEM ecosystems, and the built environment. It retains the company-first Home hierarchy and repositions Lochlann around the broader work it can credibly perform.
 
-## Home-page correction
+## Positioning revision
 
-- Keeps “Choose the right work. Win it. Deliver it.” as the hero headline.
-- Introduces Lochlann Strategies and the situations in which clients hire it before introducing the founder.
-- Retains Michael Maglothin prominently above the fold as the direct lead for every engagement.
-- Separates the company proposition from the principal-credibility statement for faster scanning.
-- Makes `See capabilities` the primary action and `Explore the experience` the secondary action.
-- Shortens the mobile opening and reduces excess top spacing so the actions appear sooner.
-- Aligns the Home meta description, Open Graph description, X description, and WebPage schema with the company-first framing while preserving the existing Person and founder signals.
-- Versions the shared stylesheet as v17.2.2 for reliable cache invalidation. The JavaScript remains v17.2.1 because its behavior is unchanged.
+- Leads with growth strategy, market entry, capture, partnerships, growth operations, and complex execution.
+- Keeps Michael Maglothin above the fold and makes his direct leadership of every engagement explicit.
+- Recasts the Home operating story from a corporate-account model to a growth-to-execution model.
+- Broadens Capabilities around portfolio choices, route-to-market strategy, capture and proposal leadership, market entry, execution readiness, and growth operations.
+- Restores founder, market-building, and partner-ecosystem experience to the career narrative.
+- Retains defense, security, infrastructure, facilities, and operational-technology experience as supporting evidence rather than the firm’s entire identity.
+- Aligns titles, descriptions, social metadata, structured data, and sitemap dates with the revised positioning.
 
-The v17.2.1 value-filter correction remains intact: the circular operating map and its duplicate explanatory copy are still removed without replacement.
+## Preserved
+
+- “Choose the right work. Win it. Deliver it.”
+- Company-first Home hierarchy and Michael Maglothin above the fold.
+- Dark navy and gold visual system, crest, imagery, navigation, page architecture, and responsive behavior.
+- Name-search SEO, linked Person/Organization schema, selected-experience proof, and contact information.
+- The v17.2.1 removal of the circular operating map.
+- `assets/lochlann-v17.2.2.css?v=17.2.2` and `assets/lochlann-v17.2.1.js?v=17.2.1`; no styling or behavior changed.
 
 ## Deployment
 

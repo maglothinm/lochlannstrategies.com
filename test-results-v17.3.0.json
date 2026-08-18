@@ -1,0 +1,37 @@
+{
+  "version": "17.3.0",
+  "date": "2026-08-18",
+  "baseline": "17.2.2",
+  "result": "pass",
+  "scope": "copy-metadata-schema-packaging",
+  "checks": {
+    "full_html_pages": 7,
+    "canonical_pages": 6,
+    "jsonld_blocks": 6,
+    "single_h1_per_full_page": true,
+    "local_targets_resolve": true,
+    "jsonld_valid": true,
+    "metadata_aligned": true,
+    "date_modified_aligned": true,
+    "sitemap_dates_aligned": true,
+    "superseded_positioning_absent": true,
+    "javascript_syntax": "pass",
+    "css_lexical_balance": "pass",
+    "local_http": "pass",
+    "archive_integrity": "pass",
+    "archive_root_flat": true
+  },
+  "canonical_meta_description_lengths": {
+    "index.html": 153,
+    "services.html": 147,
+    "engagements.html": 123,
+    "experience.html": 156,
+    "about.html": 151,
+    "contact.html": 136
+  },
+  "asset_versions": {
+    "css": "17.2.2",
+    "javascript": "17.2.1"
+  },
+  "browser_note": "The revised release is copy-only. The live v17.2.2 desktop design was reviewed; responsive risk was checked against unchanged CSS and the previously validated mobile baseline."
+}
