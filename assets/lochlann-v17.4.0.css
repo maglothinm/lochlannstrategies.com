@@ -1,0 +1,313 @@
+/* ==========================================================================
+   Lochlann Strategies — v17.4.0 career-evidence enhancement
+   Additive styles only. The v17.2.2 visual system and v17.3.0 positioning remain intact.
+   ========================================================================== */
+
+.about-background-link {
+  margin-top: 1.8rem;
+}
+
+.career-background-section {
+  overflow: hidden;
+}
+
+.career-background-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(20rem, 0.86fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: start;
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.career-timeline {
+  border-top: 1px solid var(--line-strong);
+}
+
+.career-timeline article {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.29fr) minmax(0, 1fr);
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: start;
+  padding-block: clamp(1.35rem, 2.8vw, 2rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.career-timeline time {
+  padding-top: 0.22rem;
+  color: var(--gold-500);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.career-timeline h3 {
+  max-width: 30ch;
+  font-size: clamp(1.18rem, 1.7vw, 1.55rem);
+}
+
+.career-timeline p {
+  margin-top: 0.42rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.58;
+}
+
+.career-scale-panel {
+  position: sticky;
+  top: calc(var(--header-height) + 2.4rem);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border: 1px solid var(--gold-line);
+  background: rgba(3, 16, 24, 0.52);
+  box-shadow: var(--shadow-small);
+}
+
+.career-scale-heading > p:last-child {
+  max-width: 34rem;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.career-scale-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.7rem;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.career-scale-grid article {
+  display: flex;
+  min-height: 9.2rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.15rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(14, 43, 57, 0.2);
+}
+
+.career-scale-grid strong {
+  color: var(--ivory);
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 3.1vw, 2.75rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.career-scale-grid span {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.career-scale-grid small {
+  margin-top: 0.32rem;
+  color: var(--muted-2);
+  font-size: 0.65rem;
+  line-height: 1.4;
+}
+
+.career-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(3.6rem, 7vw, 6rem);
+  border-block: 1px solid var(--line-strong);
+}
+
+.career-tracks article {
+  min-width: 0;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border-left: 1px solid var(--line);
+}
+
+.career-tracks article:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.career-tracks .card-kicker {
+  margin-top: 1.1rem;
+}
+
+.career-tracks h3 {
+  max-width: 18ch;
+  margin-top: 0.75rem;
+  font-size: clamp(1.28rem, 1.85vw, 1.7rem);
+}
+
+.career-tracks article > p:last-child {
+  margin-top: 0.95rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.career-evidence-note {
+  max-width: 64rem;
+  margin: 1.25rem auto 0;
+  color: var(--muted-2);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.evidence-story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.evidence-story-card {
+  position: relative;
+  min-width: 0;
+  padding: clamp(1.6rem, 3vw, 2.5rem);
+  border: 1px solid var(--line-strong);
+  background:
+    linear-gradient(145deg, rgba(21, 57, 70, 0.4), transparent 70%),
+    rgba(5, 21, 31, 0.68);
+}
+
+.evidence-story-card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.5rem;
+  height: 1px;
+  background: var(--gold-500);
+  content: "";
+}
+
+.evidence-story-card .card-kicker {
+  margin-top: 1.15rem;
+}
+
+.evidence-story-card h3 {
+  max-width: 18ch;
+  margin-top: 0.75rem;
+  font-size: clamp(1.45rem, 2.05vw, 1.9rem);
+}
+
+.evidence-story-card > p:last-child {
+  margin-top: 1.15rem;
+  color: var(--muted);
+  font-size: 0.87rem;
+  line-height: 1.68;
+}
+
+.technology-band {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  border-block: 1px solid var(--line);
+}
+
+.technology-band span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3.3rem;
+  padding: 0.7rem 1rem;
+  border-right: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 720;
+  letter-spacing: 0.045em;
+  line-height: 1.4;
+}
+
+.technology-band span:first-child {
+  padding-left: 0;
+}
+
+@media (max-width: 960px) {
+  .career-background-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .career-scale-panel {
+    position: static;
+  }
+
+  .career-tracks {
+    grid-template-columns: 1fr;
+  }
+
+  .career-tracks article,
+  .career-tracks article:first-child {
+    padding: 1.8rem 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .career-tracks article:first-child {
+    border-top: 0;
+  }
+
+  .evidence-story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-story-card h3 {
+    max-width: 28ch;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-background-link {
+    margin-top: 1.4rem;
+  }
+
+  .career-timeline article {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+
+  .career-timeline time {
+    padding-top: 0;
+  }
+
+  .career-scale-panel {
+    padding: 1.2rem;
+  }
+
+  .career-scale-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-scale-grid article {
+    min-height: 7.6rem;
+  }
+
+  .career-evidence-note {
+    text-align: left;
+  }
+
+  .technology-band {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .technology-band span,
+  .technology-band span:first-child {
+    min-height: 0;
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--line);
+    border-right: 0;
+  }
+
+  .technology-band span:first-child {
+    border-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .career-scale-panel,
+  .evidence-story-card {
+    scroll-behavior: auto;
+  }
+}
