@@ -1,0 +1,23 @@
+LOCHLANN STRATEGIES v17.4.1 — GITHUB COMMIT PACKAGE
+=====================================================
+
+This ZIP is a complete deployable repository snapshot.
+
+COMMIT METHOD
+1. Extract the ZIP.
+2. Open the extracted directory.
+3. Select all contents, including .nojekyll.
+4. Replace/upload the existing GitHub repository root contents in one commit.
+5. Suggested commit message:
+   Release v17.4.1: correct ProfilePage dateModified schema
+
+AFTER DEPLOYMENT
+1. Confirm https://lochlannstrategies.com/about.html is serving the new commit.
+2. Open the Profile page issue in Google Search Console.
+3. Select Validate Fix.
+
+IMPORTANT
+- Do not upload the enclosing extracted folder as a subdirectory.
+- Keep CNAME at the repository root.
+- Git history is not included in a ZIP; the existing GitHub repository retains it.
+- The deployment is static and has no build command.

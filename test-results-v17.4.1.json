@@ -1,0 +1,114 @@
+{
+  "version": "17.4.1",
+  "generated": "2026-09-17T07:53:00-04:00",
+  "overall": "PASS",
+  "checks": {
+    "primary_pages_present": {
+      "pass": true,
+      "detail": "count=8"
+    },
+    "html_semantic_parse": {
+      "pass": true,
+      "detail": "pages=8"
+    },
+    "navigation_present": {
+      "pass": true,
+      "detail": "all applicable pages"
+    },
+    "duplicate_ids_absent": {
+      "pass": true,
+      "detail": "none"
+    },
+    "jsonld_parses_and_dates_valid": {
+      "pass": true,
+      "detail": "scripts=7, dateModified=7"
+    },
+    "local_references_resolve": {
+      "pass": true,
+      "detail": "all local references resolve"
+    },
+    "profilepage_schema_validated": {
+      "pass": true,
+      "detail": "ProfilePage + Person mainEntity + ISO 8601 DateTime"
+    },
+    "date_only_dateModified_absent": {
+      "pass": true,
+      "detail": "values=7"
+    },
+    "v17_4_content_present": {
+      "pass": true,
+      "detail": "all required anchors present"
+    },
+    "prohibited_employer_absent": {
+      "pass": true,
+      "detail": "none"
+    },
+    "css_braces_balanced": {
+      "pass": true,
+      "detail": "files=2"
+    },
+    "manifest_parses": {
+      "pass": true,
+      "detail": "site.webmanifest"
+    },
+    "xml_parses": {
+      "pass": true,
+      "detail": "sitemap.xml and browserconfig.xml"
+    },
+    "sitemap_changed_dates_current": {
+      "pass": true,
+      "detail": "Home, About, Experience"
+    },
+    "javascript_syntax": {
+      "pass": true,
+      "detail": "files=2"
+    },
+    "image_integrity": {
+      "pass": true,
+      "detail": "files=19"
+    }
+  },
+  "profilePage": {
+    "type": "ProfilePage",
+    "url": "https://lochlannstrategies.com/about.html",
+    "dateModified": "2026-09-17T07:53:00-04:00",
+    "mainEntity": "https://lochlannstrategies.com/about.html#person"
+  },
+  "dateModifiedValues": [
+    {
+      "file": "404.html",
+      "type": "WebPage",
+      "value": "2026-08-18T00:00:00-04:00"
+    },
+    {
+      "file": "about.html",
+      "type": "ProfilePage",
+      "value": "2026-09-17T07:53:00-04:00"
+    },
+    {
+      "file": "contact.html",
+      "type": "WebPage",
+      "value": "2026-08-18T00:00:00-04:00"
+    },
+    {
+      "file": "engagements.html",
+      "type": "WebPage",
+      "value": "2026-08-18T00:00:00-04:00"
+    },
+    {
+      "file": "experience.html",
+      "type": "WebPage",
+      "value": "2026-09-17T07:53:00-04:00"
+    },
+    {
+      "file": "index.html",
+      "type": "WebPage",
+      "value": "2026-09-17T07:53:00-04:00"
+    },
+    {
+      "file": "services.html",
+      "type": "WebPage",
+      "value": "2026-08-18T00:00:00-04:00"
+    }
+  ]
+}

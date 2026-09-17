@@ -1,28 +1,47 @@
-# Lochlann Strategies v17.3.0 — Broader Growth Positioning
+# Lochlann Strategies Website
 
-This release starts from v17.2.2 and removes the site’s single-employer-aligned emphasis on strategic-account portfolios, prime/OEM ecosystems, and the built environment. It retains the company-first Home hierarchy and repositions Lochlann around the broader work it can credibly perform.
+Static production repository for **lochlannstrategies.com**.
 
-## Positioning revision
+## Release
 
-- Leads with growth strategy, market entry, capture, partnerships, growth operations, and complex execution.
-- Keeps Michael Maglothin above the fold and makes his direct leadership of every engagement explicit.
-- Recasts the Home operating story from a corporate-account model to a growth-to-execution model.
-- Broadens Capabilities around portfolio choices, route-to-market strategy, capture and proposal leadership, market entry, execution readiness, and growth operations.
-- Restores founder, market-building, and partner-ecosystem experience to the career narrative.
-- Retains defense, security, infrastructure, facilities, and operational-technology experience as supporting evidence rather than the firm’s entire identity.
-- Aligns titles, descriptions, social metadata, structured data, and sitemap dates with the revised positioning.
+**v17.4.1 — ProfilePage DateTime Correction**  
+Release date: September 17, 2026
 
-## Preserved
+This maintenance release corrects the Google Search Console warning for an invalid `dateModified` value in Profile page structured data. It retains the complete v17.4.0 executive-career evidence update and makes no visible design or copy changes.
 
-- “Choose the right work. Win it. Deliver it.”
-- Company-first Home hierarchy and Michael Maglothin above the fold.
-- Dark navy and gold visual system, crest, imagery, navigation, page architecture, and responsive behavior.
-- Name-search SEO, linked Person/Organization schema, selected-experience proof, and contact information.
-- The v17.2.1 removal of the circular operating map.
-- `assets/lochlann-v17.2.2.css?v=17.2.2` and `assets/lochlann-v17.2.1.js?v=17.2.1`; no styling or behavior changed.
+### Primary changes
+
+- The About page is explicitly identified as a Schema.org `ProfilePage`.
+- Its `mainEntity` continues to reference Michael Maglothin’s `Person` entity.
+- `dateModified` now uses a full ISO 8601 DateTime with a UTC offset: `2026-09-17T07:53:00-04:00`.
+- All other page-level `dateModified` values also use complete timezone-qualified DateTime values.
+- Sitemap `lastmod` dates are current for Home, About, and Experience.
+- The v17.4.0 executive chronology, prior-role scale, evidence modules, metadata, visual system, and company-first positioning are preserved.
 
 ## Deployment
 
-Upload the **contents of this directory** to the existing GitHub Pages repository root in one commit, replacing the prior site files. Include `sectors.html`. Preserve any repository-only `CNAME` file.
+This repository has no build step.
 
-No build process, package manager, external font service, JavaScript framework, or third-party runtime dependency is required.
+1. Extract the ZIP.
+2. Upload or commit **the contents at the ZIP root** to the GitHub repository root.
+3. Keep `CNAME`, `.nojekyll`, and the `assets/` directory intact.
+4. Allow GitHub Pages to publish the commit.
+5. In Google Search Console, open the Profile page issue and select **Validate Fix** after the updated About page is live.
+
+## Primary pages
+
+- `index.html` — Home
+- `services.html` — Capabilities
+- `engagements.html` — Approach
+- `experience.html` — Experience and prior-role evidence
+- `about.html` — Michael Maglothin, executive chronology, and ProfilePage markup
+- `contact.html` — Contact
+- `404.html` — Not-found page
+
+## Validation
+
+See `TEST_REPORT-v17.4.1.md`, `BROWSER_QA-v17.4.1.md`, and the accompanying JSON result files.
+
+## Repository note
+
+A ZIP archive does not include the existing Git `.git` directory or commit history. GitHub retains history when these files are committed to the existing repository.
