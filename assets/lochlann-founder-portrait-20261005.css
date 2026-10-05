@@ -1,0 +1,40 @@
+/* About-page founder portrait. The site's advisory positioning and shared styles are unchanged. */
+.page-about .about-hero-inner {
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
+  gap: clamp(2rem, 7vw, 6rem);
+  min-height: max(43rem, calc(90svh - var(--header-height)));
+  padding-top: clamp(2.5rem, 5vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+.page-about .about-founder-card {
+  width: 100%;
+  max-width: 24rem;
+  justify-self: end;
+  padding: 0;
+  overflow: hidden;
+}
+.page-about .about-founder-portrait {
+  margin: 0;
+  border-bottom: 1px solid var(--gold-line);
+  background: var(--ink-1000);
+}
+.page-about .about-founder-portrait picture,
+.page-about .about-founder-portrait img {
+  display: block;
+  width: 100%;
+}
+.page-about .about-founder-portrait img {
+  height: auto;
+  aspect-ratio: 1;
+}
+.page-about .about-founder-card > p { margin: 1.25rem 1.5rem 0; }
+.page-about .about-founder-card > span { margin: 0.25rem 1.5rem 0; }
+.page-about .about-founder-card dl { margin: 1.1rem 1.5rem 1.4rem; }
+@media (max-width: 960px) {
+  .page-about .about-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .page-about .about-founder-card { justify-self: start; max-width: 28rem; }
+}
+@media (max-width: 700px) {
+  .page-about .about-hero-inner { padding-top: 2.5rem; padding-bottom: 3rem; }
+  .page-about .about-founder-card { max-width: 25rem; }
+}
