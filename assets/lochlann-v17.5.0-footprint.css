@@ -29,3 +29,13 @@
 .footprint-qualification{margin-top:1.65rem;padding-top:1.2rem;border-top:1px solid var(--line);color:var(--muted-2);font-size:.78rem;line-height:1.6}
 @media(max-width:920px){.footprint-layout{grid-template-columns:1fr}.footprint-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;align-items:start}.footprint-count{grid-column:1/-1}.footprint-region{border-bottom:0;padding-bottom:0}.footprint-agency-intro{grid-template-columns:1fr;gap:1rem}}
 @media(max-width:650px){.footprint-details{display:flex;gap:.9rem}.footprint-region{border-bottom:1px solid var(--line);padding-bottom:.9rem}.footprint-region:last-child{border:0}.footprint-agency-grid{grid-template-columns:1fr;gap:1.6rem}.footprint-agency-panel{padding:1.35rem}.footprint-count strong{font-size:4.5rem}}
+
+/* v17.5.1: separate fill classifications with a map legend. */
+.footprint-legend{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem 1.3rem;margin-bottom:.48rem;color:var(--text);font-size:.78rem;font-weight:600;letter-spacing:.01em}
+.footprint-legend-item{display:inline-flex;align-items:center;gap:.45rem;white-space:normal}
+.footprint-legend-swatch{display:inline-block;flex:0 0 .82rem;width:.82rem;height:.82rem;border-radius:.14rem}
+.footprint-legend-awarded{background:#a9814b;border:1px solid #efcf93}
+.footprint-legend-additional{background:#598592;border:1px solid #b9dce4}
+.footprint-caption-note{display:block;color:var(--muted-2);font-size:.75rem;line-height:1.6}
+.footprint-region-other{border-bottom:0}
+@media(max-width:920px) and (min-width:651px){.footprint-details{grid-template-columns:repeat(2,minmax(0,1fr))}.footprint-region-other{grid-column:1 / -1}}
