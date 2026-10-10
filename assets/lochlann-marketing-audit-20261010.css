@@ -1,0 +1,116 @@
+/* Marketing clarity and evidence modules — 2026-10-10.
+   Additive rules; keep the existing responsive visual system intact. */
+
+/* Keep the longer, descriptive headline scannable without overfilling the hero. */
+.hero-home-copy h1 {
+  max-width: 14.5ch;
+  font-size: clamp(3.3rem, 5.1vw, 5.8rem);
+  line-height: .99;
+}
+@media (max-width: 960px) {
+  .hero-home-copy h1 { max-width: 15ch; font-size: clamp(3.1rem, 8vw, 5.25rem); }
+}
+@media (max-width: 700px) {
+  .hero-home-copy h1 { max-width: 15ch; font-size: clamp(2.8rem, 10.5vw, 4.3rem); }
+}
+@media (max-width: 430px) {
+  .hero-home-copy h1 { font-size: clamp(2.6rem, 11vw, 3.45rem); }
+}
+
+.home-evidence-section .section-intro { margin-bottom: clamp(2rem, 4vw, 3.1rem); }
+.home-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.9rem, 2vw, 1.4rem);
+}
+.home-evidence-card {
+  min-width: 0;
+  padding: clamp(1.45rem, 2.6vw, 2.25rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, rgba(21, 57, 70, .66), rgba(5, 21, 31, .9));
+}
+.home-evidence-card .eyebrow { margin-bottom: 1.2rem; }
+.home-evidence-card strong {
+  display: block;
+  color: var(--ivory);
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-weight: 500;
+  letter-spacing: -.035em;
+  line-height: 1.1;
+}
+.home-evidence-card p:last-child {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.7;
+}
+.home-evidence-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.65rem;
+}
+.home-evidence-note {
+  max-width: 62ch;
+  color: var(--muted-2);
+  font-size: .79rem;
+  line-height: 1.6;
+}
+.service-output-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: clamp(1.6rem, 5vw, 4rem);
+  align-items: center;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: clamp(1.6rem, 4vw, 3rem);
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius-large);
+  background: linear-gradient(125deg, rgba(15, 49, 61, .85), rgba(3, 16, 24, .95));
+}
+.service-output-panel h3 {
+  margin-top: .75rem;
+  max-width: 19ch;
+  font-size: clamp(1.65rem, 2.7vw, 2.5rem);
+  line-height: 1.18;
+}
+.service-output-panel p:not(.eyebrow) { margin-top: 1.05rem; color: var(--muted); }
+.service-output-panel .text-link { display: inline-flex; margin-top: 1.2rem; }
+.service-output-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem 1.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.service-output-list li {
+  position: relative;
+  padding: .65rem 0 .65rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+.service-output-list li::before {
+  position: absolute;
+  top: 1.26rem;
+  left: .12rem;
+  width: .38rem;
+  height: .38rem;
+  border-radius: 50%;
+  background: var(--gold-500);
+  content: "";
+}
+@media (max-width: 900px) {
+  .home-evidence-grid { grid-template-columns: 1fr; }
+  .home-evidence-card { padding: 1.55rem; }
+  .home-evidence-card strong { font-size: clamp(2.25rem, 7vw, 3rem); }
+  .service-output-panel { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .service-output-list { grid-template-columns: 1fr; }
+  .home-evidence-footer { align-items: flex-start; }
+}
