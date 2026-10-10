@@ -1,0 +1,31 @@
+
+/* Experience-only customer geography and government background — v17.5.0 */
+.customer-footprint-section{position:relative;border-block:1px solid var(--line);padding-block:clamp(4.5rem,7vw,7rem);overflow:hidden}
+.customer-footprint-section::before{position:absolute;inset:0 0 auto;height:17rem;pointer-events:none;content:"";background:radial-gradient(ellipse at 26% 0%,rgba(55,111,116,.13),transparent 67%)}
+.customer-footprint-section>.container{position:relative;z-index:1}
+.customer-footprint-section .section-intro{margin-bottom:clamp(1.6rem,3vw,2.6rem)}
+.footprint-layout{display:grid;grid-template-columns:minmax(0,1.54fr) minmax(15rem,.82fr);gap:clamp(1.5rem,3vw,2.7rem);align-items:stretch}
+.footprint-map-card{display:flex;flex-direction:column;justify-content:center;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-large);background:linear-gradient(148deg,#102b38,#071e2a);box-shadow:0 24px 60px rgba(0,0,0,.12)}
+.footprint-map-card img{display:block;width:100%;height:auto;aspect-ratio:1120/544;object-fit:contain}
+.footprint-map-card figcaption{border-top:1px solid var(--line);padding:.8rem 1.1rem;color:var(--muted-2);font-size:.76rem;line-height:1.5}
+.footprint-details{display:flex;flex-direction:column;justify-content:center;gap:1.1rem}
+.footprint-count{display:flex;align-items:center;gap:1rem;margin-bottom:.25rem;padding-bottom:1.25rem;border-bottom:1px solid var(--gold-line)}
+.footprint-count strong{color:var(--gold-400);font-family:var(--display);font-weight:500;font-size:clamp(4rem,6.8vw,6.3rem);letter-spacing:-.055em;line-height:.8}
+.footprint-count span{max-width:15rem;color:var(--muted);font-size:.9rem;line-height:1.5}
+.footprint-region{padding-bottom:1.1rem;border-bottom:1px solid var(--line)}
+.footprint-region:last-child{border-bottom:0;padding-bottom:0}
+.footprint-region h3{margin-bottom:.35rem;color:var(--gold-500);font-family:var(--body);font-size:.74rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+.footprint-region p{color:var(--text);font-size:.94rem;line-height:1.66}
+.footprint-agency-panel{margin-top:clamp(2.1rem,4vw,3.5rem);padding:clamp(1.6rem,3.5vw,2.7rem);border:1px solid var(--line);border-radius:var(--radius-large);background:linear-gradient(120deg,rgba(19,57,70,.68),rgba(4,22,33,.82))}
+.footprint-agency-intro{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:2rem;align-items:end;padding-bottom:1.6rem;border-bottom:1px solid var(--line)}
+.footprint-agency-intro h3{margin-top:.8rem;font-size:clamp(1.75rem,2.55vw,2.5rem);line-height:1.13}
+.footprint-agency-intro>p{color:var(--muted);font-size:.99rem;line-height:1.65}
+.footprint-agency-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);padding-top:1.6rem}
+.footprint-agency-group h4{color:var(--gold-500);font-family:var(--body);font-size:.78rem;font-weight:760;letter-spacing:.14em;text-transform:uppercase;margin:0 0 1rem}
+.footprint-agency-group ul{list-style:none;display:grid;gap:.6rem;margin:0;padding:0}
+.footprint-agency-group li{position:relative;padding-left:1.2rem;color:var(--text);font-size:.92rem;line-height:1.54}
+.footprint-agency-group li::before{content:"";position:absolute;left:0;top:.63rem;width:.35rem;height:.35rem;border-radius:50%;background:var(--gold-500)}
+.footprint-agency-group li span{color:var(--muted-2)}
+.footprint-qualification{margin-top:1.65rem;padding-top:1.2rem;border-top:1px solid var(--line);color:var(--muted-2);font-size:.78rem;line-height:1.6}
+@media(max-width:920px){.footprint-layout{grid-template-columns:1fr}.footprint-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;align-items:start}.footprint-count{grid-column:1/-1}.footprint-region{border-bottom:0;padding-bottom:0}.footprint-agency-intro{grid-template-columns:1fr;gap:1rem}}
+@media(max-width:650px){.footprint-details{display:flex;gap:.9rem}.footprint-region{border-bottom:1px solid var(--line);padding-bottom:.9rem}.footprint-region:last-child{border:0}.footprint-agency-grid{grid-template-columns:1fr;gap:1.6rem}.footprint-agency-panel{padding:1.35rem}.footprint-count strong{font-size:4.5rem}}
