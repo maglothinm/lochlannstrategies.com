@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 544" role="img" aria-labelledby="map-title map-desc">
-<title id="map-title">Prior awarded-work customer locations across 12 countries</title>
-<desc id="map-desc">Geographic representation of the United States, Guatemala, Costa Rica, Panama, Belgium, Estonia, Armenia, Israel, Saudi Arabia, Qatar, United Arab Emirates, and Oman. Countries are highlighted in muted gold and marked with dots. Locations denote countries, not exact facilities or current Lochlann clients.</desc>
+<title id="map-title">Twelve selected awarded-work customer countries</title>
+<desc id="map-desc">Geographic representation of the United States, Guatemala, Costa Rica, Panama, Belgium, Estonia, Armenia, Israel, Saudi Arabia, Qatar, United Arab Emirates, and Oman. Countries are highlighted in muted gold and marked with dots. These 12 highlighted countries are selected examples, not the full geographic scope of awarded work or other international activity. Locations denote countries, not exact facilities or current Lochlann clients.</desc>
 <defs><linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0e2b39"/><stop offset="1" stop-color="#0a202c"/></linearGradient></defs>
 <rect x="0" y="0" width="1120" height="544" rx="17" fill="url(#ocean)"/>
 <g fill="none" stroke="#b5c9cf" stroke-opacity=".10" stroke-width=".8"><path d="M186.7 11V524" /><path d="M373.3 11V524" /><path d="M560.0 11V524" /><path d="M746.7 11V524" /><path d="M933.3 11V524" /><path d="M0 391.5H1120" /><path d="M0 287.6H1120" /><path d="M0 183.7H1120" /><path d="M0 79.8H1120" /></g>
