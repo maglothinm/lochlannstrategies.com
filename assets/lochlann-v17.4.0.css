@@ -328,3 +328,15 @@ a.person-mention:focus-visible {
   color: var(--gold-400);
   text-decoration-color: currentColor;
 }
+
+/* v17.4.2 compact editorial: right-size cards after shorter copy. */
+.engagement-card-grid .engagement-card { min-height: 21rem; }
+.engagement-card-grid .engagement-card .index { margin-top: 2rem; }
+.engagement-card-grid .engagement-card .text-link { padding-top: 1.2rem; }
+.capability-grid .capability-card { min-height: 20rem; }
+.capability-grid .capability-card h3 { padding-top: 1.6rem; }
+.capability-grid .capability-card .tag-list { margin-top: 1rem; }
+@media (max-width: 700px) {
+  .engagement-card-grid .engagement-card,
+  .capability-grid .capability-card { min-height: 0; }
+}
