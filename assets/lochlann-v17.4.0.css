@@ -311,3 +311,20 @@
     scroll-behavior: auto;
   }
 }
+
+
+/* v17.4.1 — unobtrusive inline links to the founder's About page. */
+a.person-mention {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(217, 184, 120, 0.58);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.17em;
+  text-decoration-skip-ink: auto;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+a.person-mention:hover,
+a.person-mention:focus-visible {
+  color: var(--gold-400);
+  text-decoration-color: currentColor;
+}
