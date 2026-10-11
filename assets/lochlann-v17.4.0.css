@@ -340,3 +340,56 @@ a.person-mention:focus-visible {
   .engagement-card-grid .engagement-card,
   .capability-grid .capability-card { min-height: 0; }
 }
+
+
+/* 2026-10-10 — commercial positioning, service packages, and practical mobile refinements. */
+.capability-grid.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+.capability-grid.solution-grid .capability-card {
+  grid-column: auto;
+  min-height: 0;
+  padding: clamp(1.4rem, 2.2vw, 2.1rem);
+}
+.capability-grid.solution-grid .capability-card h3 { padding-top: 1.15rem; }
+.capability-grid.solution-grid .capability-card .solution-fit {
+  margin-block: 1rem;
+  padding-left: .85rem;
+  border-left: 2px solid var(--gold-500);
+  color: var(--ivory);
+  font-weight: 550;
+  line-height: 1.55;
+}
+.capability-grid.solution-grid .tag-list { margin-top: 1.5rem; }
+.evidence-story-card .story-evidence { margin-top: 1rem; }
+.evidence-story-card .story-evidence strong {
+  color: var(--gold-400);
+  font-weight: 750;
+}
+.evidence-story-card .story-relevance {
+  margin-top: 1.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--ivory);
+}
+.mode-card .mode-fit {
+  margin-top: .7rem;
+  color: var(--ivory);
+}
+@media (max-width: 960px) {
+  .capability-grid.solution-grid { grid-template-columns: 1fr; }
+  .capability-grid.solution-grid .capability-card { min-height: 0; }
+}
+@media (max-width: 700px) {
+  .hero-home .hero-image-frame { height: clamp(18rem, 66vw, 24rem); }
+  .hero-home .operating-arc { display: none; }
+  .engagement-card-grid .engagement-card { min-height: 0; }
+  .page-hero .page-hero-image { min-height: 19rem; }
+  .capability-grid.solution-grid .capability-card { padding: 1.35rem; }
+  .button, .hero-home-copy .button, .page-hero-actions .button, .contact-closing .button {
+    font-size: .78rem;
+    letter-spacing: .045em;
+  }
+}
