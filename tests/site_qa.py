@@ -131,7 +131,7 @@ def validate_static() -> dict:
                 f"Experience endorsement section reveals {forbidden!r}")
     for phrase in (
         "Senior Director</span><span class=\"endorsement-context\">· Security Solutions",
-        "Senior Director</span><span class=\"endorsement-context\">· Business Development, Security Technology",
+        "Senior Director</span><span class=\"endorsement-context\">· Federal Business Development",
         "Vice President</span><span class=\"endorsement-context\">· Secure Network Solutions",
     ):
         require(phrase in segment, f"Experience: missing attribution {phrase}")
