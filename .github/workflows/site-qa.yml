@@ -1,0 +1,42 @@
+name: Lochlann Website QA
+
+on:
+  pull_request:
+    paths:
+      - "*.html"
+      - "assets/**"
+      - "sitemap.xml"
+      - "tests/site_qa.py"
+      - ".github/workflows/site-qa.yml"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-and-static-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out website source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install browser QA dependencies
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Run static and responsive browser QA
+        run: python tests/site_qa.py
+      - name: Upload QA screenshots and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lochlann-site-qa
+          path: qa-artifacts/
+          if-no-files-found: ignore
+          retention-days: 14

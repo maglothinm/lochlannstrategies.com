@@ -97,26 +97,7 @@
   line-height: 1.4;
 }
 .endorsement-quote-card figcaption { margin-top: 1.6rem; }
-.endorsement-supporting-head {
-  margin-top: clamp(2rem, 3.6vw, 3.25rem);
-  margin-bottom: 1.1rem;
-}
-.endorsement-supporting-head h3 {
-  font-size: clamp(1.25rem, 1.8vw, 1.7rem);
-  margin-bottom: .35rem;
-}
-.endorsement-supporting-head p { max-width: 60rem; color: var(--muted); }
-.endorsement-compact-grid .endorsement-quote-card {
-  min-height: 0;
-  padding: clamp(1.2rem, 2vw, 1.65rem);
-  background: rgba(3,16,24,.26);
-  border-color: var(--line);
-}
-.endorsement-compact-grid .endorsement-quote-card blockquote {
-  font-size: clamp(1.12rem, 1.4vw, 1.35rem);
-  line-height: 1.46;
-}
-.endorsement-compact-grid .endorsement-kicker { margin-bottom: .85rem; }
+
 .endorsement-disclaimer {
   margin-top: 1.5rem;
   max-width: 70rem;
