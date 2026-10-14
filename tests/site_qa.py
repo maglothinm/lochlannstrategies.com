@@ -252,11 +252,11 @@ def validate_browser() -> list[dict]:
                                     require(page.locator("[data-mobile-menu]").is_visible(),
                                             f"{filename}: mobile nav failed to open")
                                     page.keyboard.press("Escape")
-                                    # Some releases only close on toggle click.
-                                    if page.locator("[data-mobile-menu]").is_visible():
-                                        toggle.click()
-                                    require(not page.locator("[data-mobile-menu]").is_visible(),
-                                            f"{filename}: mobile nav failed to close")
+                                    page.locator("[data-mobile-menu]").wait_for(
+                                        state="hidden", timeout=1500
+                                    )
+                                    require(toggle.get_attribute("aria-expanded") == "false",
+                                            f"{filename}: mobile nav state remained open")
                             require(not errors, f"{filename}/{viewport_name}: browser errors: {errors}")
                             if filename in ("index.html", "about.html", "experience.html"):
                                 path = shots / f"{filename.removesuffix('.html')}-{viewport_name}.png"
