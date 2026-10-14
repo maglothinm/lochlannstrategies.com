@@ -1,0 +1,139 @@
+/* Lochlann Strategies — v17.5.3
+   Prior-career endorsements; non-named professional attributions.
+   Scoped to About and Experience. No JS, no external dependencies. */
+
+.endorsement-section { position: relative; }
+.endorsement-feature-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+.endorsement-feature-intro h2 { max-width: 11ch; }
+.endorsement-feature-intro > p:last-child {
+  color: var(--muted);
+  max-width: 31rem;
+  margin-top: 1.5rem;
+  line-height: 1.65;
+}
+.endorsement-quote { margin: 0; min-width: 0; }
+.endorsement-quote-feature {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(2rem, 4vw, 3.7rem);
+  border: 1px solid var(--line-strong);
+  border-top: 2px solid var(--gold-500);
+  background: linear-gradient(125deg, rgba(21,57,70,.7), rgba(7,28,40,.65));
+  box-shadow: var(--shadow-small);
+}
+.endorsement-quote-feature::before {
+  content: "“";
+  position: absolute;
+  top: -.8rem;
+  right: 1.2rem;
+  color: var(--gold-500);
+  opacity: .2;
+  font: normal 12rem/1 var(--display);
+  pointer-events: none;
+}
+.endorsement-quote blockquote {
+  position: relative;
+  z-index: 1;
+  font-family: var(--display);
+  letter-spacing: -.022em;
+  text-wrap: pretty;
+  color: var(--ivory);
+}
+.endorsement-quote-feature blockquote {
+  font-size: clamp(1.55rem, 2.8vw, 2.5rem);
+  line-height: 1.3;
+}
+.endorsement-quote figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .2rem .5rem;
+  border-top: 1px solid var(--line);
+  margin-top: 1.75rem;
+  padding-top: 1.05rem;
+  line-height: 1.45;
+}
+.endorsement-role {
+  color: var(--ivory);
+  font-weight: 650;
+  font-size: .84rem;
+}
+.endorsement-context {
+  color: var(--muted);
+  font-size: .84rem;
+}
+.endorsement-section-grid .section-intro { margin-bottom: clamp(2rem, 4vw, 3.8rem); }
+.endorsement-quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.85rem, 1.5vw, 1.35rem);
+}
+.endorsement-quote-card {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.35rem, 2.5vw, 2.2rem);
+  min-height: 19rem;
+  border: 1px solid var(--line-strong);
+  background: linear-gradient(145deg, rgba(21,57,70,.6), rgba(3,16,24,.46));
+}
+.endorsement-kicker {
+  margin: 0 0 1.2rem;
+  color: var(--gold-400);
+  font-weight: 750;
+  letter-spacing: .115em;
+  font-size: .68rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.endorsement-quote-card blockquote {
+  flex: 1;
+  font-size: clamp(1.25rem, 1.65vw, 1.58rem);
+  line-height: 1.4;
+}
+.endorsement-quote-card figcaption { margin-top: 1.6rem; }
+.endorsement-supporting-head {
+  margin-top: clamp(2rem, 3.6vw, 3.25rem);
+  margin-bottom: 1.1rem;
+}
+.endorsement-supporting-head h3 {
+  font-size: clamp(1.25rem, 1.8vw, 1.7rem);
+  margin-bottom: .35rem;
+}
+.endorsement-supporting-head p { max-width: 60rem; color: var(--muted); }
+.endorsement-compact-grid .endorsement-quote-card {
+  min-height: 0;
+  padding: clamp(1.2rem, 2vw, 1.65rem);
+  background: rgba(3,16,24,.26);
+  border-color: var(--line);
+}
+.endorsement-compact-grid .endorsement-quote-card blockquote {
+  font-size: clamp(1.12rem, 1.4vw, 1.35rem);
+  line-height: 1.46;
+}
+.endorsement-compact-grid .endorsement-kicker { margin-bottom: .85rem; }
+.endorsement-disclaimer {
+  margin-top: 1.5rem;
+  max-width: 70rem;
+  color: var(--muted-2);
+  font-size: .8rem;
+  line-height: 1.65;
+}
+@media (max-width: 1050px) {
+  .endorsement-quote-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 780px) {
+  .endorsement-feature-layout { grid-template-columns: 1fr; }
+  .endorsement-feature-intro h2 { max-width: none; }
+}
+@media (max-width: 650px) {
+  .endorsement-quote-grid { grid-template-columns: 1fr; }
+  .endorsement-quote-card { min-height: 0; }
+  .endorsement-quote-feature { padding: 1.6rem; }
+  .endorsement-quote-feature::before { font-size: 8rem; }
+}
