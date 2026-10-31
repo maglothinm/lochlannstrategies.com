@@ -6,7 +6,7 @@ rendering without third-party sites or user data.
 """
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from functools import partial
 from html import unescape
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -24,8 +24,12 @@ PAGES = [
     "index.html", "services.html", "engagements.html",
     "experience.html", "about.html", "contact.html", "404.html",
 ]
-VIEWPORTS = {"desktop": (1440, 1000), "mobile": (390, 844)}
-QA_DATE = "2026-10-14"
+VIEWPORTS = {
+    "desktop": (1440, 1000),
+    "mobile": (390, 844),
+    "tall-mobile": (412, 10000),
+}
+MIN_CONTENT_DATE = "2026-10-14"
 
 
 def require(condition: bool, message: str) -> None:
@@ -43,6 +47,7 @@ def metadata(html: str, key: str) -> str | None:
 
 def validate_static() -> dict:
     page_ids = {}
+    page_modified = {}
     contents = {}
     for path in PAGES:
         html = (ROOT / path).read_text(encoding="utf-8")
@@ -70,15 +75,20 @@ def validate_static() -> dict:
                 if stamp:
                     require(
                         bool(re.fullmatch(
-                            r"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:Z|[+-]\d\d:\d\d)", stamp
+                            r"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?(?:Z|[+-]\d\d:\d\d)", stamp
                         )),
                         f"{path}: dateModified must be ISO 8601 date-time with timezone: {stamp}",
                     )
                     value = datetime.fromisoformat(stamp.replace("Z", "+00:00"))
                     require(value.tzinfo is not None, f"{path}: naive dateModified")
+                    require(value <= datetime.now(timezone.utc),
+                            f"{path}: future dateModified")
                     if path in {"index.html", "about.html", "experience.html"}:
-                        require(value.date().isoformat() == QA_DATE,
+                        require(value.date().isoformat() >= MIN_CONTENT_DATE,
                                 f"{path}: stale dateModified")
+                    if item.get("@type") in {"WebPage", "ProfilePage"}:
+                        page_modified[path] = value.date().isoformat()
+        require(path in page_modified, f"{path}: page dateModified missing")
         require(bool(metadata(html, "og:image")), f"{path}: missing Open Graph image")
         require(bool(metadata(html, "twitter:card")), f"{path}: missing Twitter card")
         require('rel="canonical"' in html, f"{path}: canonical missing")
@@ -144,10 +154,32 @@ def validate_static() -> dict:
         entry.findtext(f"{ns}loc"): entry.findtext(f"{ns}lastmod")
         for entry in sitemap.getroot().findall(f"{ns}url")
     }
-    for tail in ("", "about.html", "experience.html"):
+    for path in PAGES:
+        if path == "404.html":
+            continue
+        tail = "" if path == "index.html" else path
         url = "https://lochlannstrategies.com/" + tail
-        require(mod.get(url) == QA_DATE,
-                f"Sitemap stale/missing modification date: {url}")
+        require(mod.get(url) == page_modified[path],
+                f"Sitemap lastmod must match page dateModified: {url}")
+
+    portrait = re.search(
+        r'<figure class="about-founder-portrait">([\s\S]*?)</figure>', about
+    )
+    require(portrait is not None, "About: portrait figure missing")
+    portrait_src = re.search(r'<img\b[^>]*\bsrc="([^"]+)"', portrait.group(1))
+    require(portrait_src is not None, "About: portrait must use an img src")
+    portrait_url = "https://lochlannstrategies.com/" + portrait_src.group(1)
+    require(metadata(about, "og:image") == portrait_url,
+            "About: Open Graph image must match the visible portrait")
+    require(metadata(about, "twitter:image") == portrait_url,
+            "About: Twitter image must match the visible portrait")
+    image_ns = "{http://www.google.com/schemas/sitemap-image/1.1}"
+    about_entry = next(entry for entry in sitemap.getroot().findall(f"{ns}url")
+                       if entry.findtext(f"{ns}loc") == "https://lochlannstrategies.com/about.html")
+    sitemap_images = [entry.findtext(f"{image_ns}loc")
+                      for entry in about_entry.findall(f"{image_ns}image")]
+    require(portrait_url in sitemap_images,
+            "About: sitemap must include the current visible portrait")
 
     styles = set()
     for html in contents.values():
@@ -191,10 +223,12 @@ def validate_browser() -> list[dict]:
                     context = browser.new_context(
                         viewport={"width": width, "height": height},
                         device_scale_factor=1,
-                        reduced_motion="reduce",
+                        reduced_motion="no-preference" if viewport_name == "tall-mobile" else "reduce",
                     )
                     try:
                         for filename in PAGES:
+                            if viewport_name == "tall-mobile" and filename != "about.html":
+                                continue
                             page = context.new_page()
                             errors: list[str] = []
                             page.on("pageerror", lambda e: errors.append(str(e)))
@@ -222,6 +256,28 @@ def validate_browser() -> list[dict]:
                             )
                             require(overflow <= 2,
                                     f"{filename}/{viewport_name}: overflow {overflow}px")
+                            if filename == "about.html":
+                                portrait = page.locator(".about-founder-portrait img")
+                                require(portrait.count() == 1 and portrait.is_visible(),
+                                        f"About/{viewport_name}: portrait not rendered")
+                                require(portrait.evaluate("img => img.complete && img.naturalWidth > 0"),
+                                        f"About/{viewport_name}: portrait did not load")
+                                if viewport_name == "tall-mobile":
+                                    # A tall crawler viewport must not push the introduction
+                                    # and portrait thousands of pixels below the header.
+                                    heading_box = page.locator("h1").bounding_box()
+                                    portrait_box = portrait.bounding_box()
+                                    require(heading_box is not None and heading_box["y"] < 500,
+                                            "About/tall-mobile: excessive space before introduction")
+                                    require(portrait_box is not None and
+                                            portrait_box["y"] + portrait_box["height"] < 1800,
+                                            "About/tall-mobile: portrait pushed below opening content")
+                                    require(portrait.evaluate("""img => {
+                                        for (let node = img; node; node = node.parentElement) {
+                                            if (Number(getComputedStyle(node).opacity) === 0) return false;
+                                        }
+                                        return true;
+                                    }"""), "About/tall-mobile: portrait hidden by animation")
                             if filename in ("about.html", "experience.html"):
                                 quote_count = page.locator(".endorsement-quote").count()
                                 expected = 1 if filename == "about.html" else 3
@@ -245,7 +301,7 @@ def validate_browser() -> list[dict]:
                                     expected_cols = 1 if viewport_name == "mobile" else 3
                                     require(columns == expected_cols,
                                             f"{filename}/{viewport_name}: grid columns {columns}")
-                            if viewport_name == "mobile":
+                            if width < 700:
                                 toggle = page.locator("[data-menu-toggle]")
                                 if toggle.count() and toggle.is_visible():
                                     toggle.click()
