@@ -31,7 +31,9 @@
 .page-about .about-founder-card > span { margin: 0.25rem 1.5rem 0; }
 .page-about .about-founder-card dl { margin: 1.1rem 1.5rem 1.4rem; }
 @media (max-width: 960px) {
-  .page-about .about-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  /* Keep the single-column hero sized to its content, including in tall crawler viewports. */
+  .page-about .page-hero-about { min-height: 0; }
+  .page-about .about-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; min-height: 0; align-items: start; }
   .page-about .about-founder-card { justify-self: start; max-width: 28rem; }
 }
 @media (max-width: 700px) {
