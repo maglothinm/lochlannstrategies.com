@@ -1131,7 +1131,7 @@ a:hover .icon-arrow {
 
 .credential-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   list-style: none;
 }
 
@@ -2815,9 +2815,7 @@ a:hover .icon-arrow {
     grid-column: span 2;
   }
 
-  .credential-list li:nth-child(4),
-  .credential-list li:nth-child(5) {
-    grid-column: span 3;
+  .credential-list li:nth-child(n + 4) {
     border-top: 1px solid var(--line);
   }
 
