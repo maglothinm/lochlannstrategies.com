@@ -1131,7 +1131,7 @@ a:hover .icon-arrow {
 
 .credential-list {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   list-style: none;
 }
 
@@ -2808,18 +2808,19 @@ a:hover .icon-arrow {
   }
 
   .credential-list {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .credential-list li {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 
-  .credential-list li:nth-child(n + 4) {
+  .credential-list li:nth-child(n + 5) {
+    grid-column: span 4;
     border-top: 1px solid var(--line);
   }
 
-  .credential-list li:nth-child(4) {
+  .credential-list li:nth-child(5) {
     border-left: 0;
   }
 
@@ -3021,8 +3022,7 @@ a:hover .icon-arrow {
 
   .credential-list li,
   .credential-list li:first-child,
-  .credential-list li:nth-child(4),
-  .credential-list li:nth-child(5) {
+  .credential-list li:nth-child(n + 5) {
     grid-column: auto;
     min-height: 0;
     justify-content: flex-start;
