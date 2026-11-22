@@ -36,8 +36,8 @@
   padding-top: 0.22rem;
   color: var(--gold-500);
   font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   line-height: 1.45;
   text-transform: uppercase;
 }
@@ -215,7 +215,7 @@
   border-right: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.68rem;
-  font-weight: 720;
+  font-weight: 600;
   letter-spacing: 0.045em;
   line-height: 1.4;
 }
@@ -359,14 +359,14 @@ a.person-mention:focus-visible {
   padding-left: .85rem;
   border-left: 2px solid var(--gold-500);
   color: var(--ivory);
-  font-weight: 550;
+  font-weight: 600;
   line-height: 1.55;
 }
 .capability-grid.solution-grid .tag-list { margin-top: 1.5rem; }
 .evidence-story-card .story-evidence { margin-top: 1rem; }
 .evidence-story-card .story-evidence strong {
   color: var(--gold-400);
-  font-weight: 750;
+  font-weight: 700;
 }
 .evidence-story-card .story-relevance {
   margin-top: 1.15rem;
@@ -390,6 +390,6 @@ a.person-mention:focus-visible {
   .capability-grid.solution-grid .capability-card { padding: 1.35rem; }
   .button, .hero-home-copy .button, .page-hero-actions .button, .contact-closing .button {
     font-size: .78rem;
-    letter-spacing: .045em;
+    letter-spacing: 0.06em;
   }
 }

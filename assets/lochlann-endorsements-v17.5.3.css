@@ -61,7 +61,7 @@
 }
 .endorsement-role {
   color: var(--ivory);
-  font-weight: 650;
+  font-weight: 600;
   font-size: .84rem;
 }
 .endorsement-context {
@@ -85,8 +85,8 @@
 .endorsement-kicker {
   margin: 0 0 1.2rem;
   color: var(--gold-400);
-  font-weight: 750;
-  letter-spacing: .115em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   font-size: .68rem;
   line-height: 1.5;
   text-transform: uppercase;
